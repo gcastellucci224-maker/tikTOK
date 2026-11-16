@@ -1,0 +1,2433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#090A0F">
+<title>72H Reset Protocol – The anti-paralysis system for overloaded minds</title>
+<meta name="description" content="Empty your head, break the screen habit and hand your week's planning to AI in a single weekend.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="72H Reset Protocol – The anti-paralysis system for overloaded minds">
+<meta property="og:description" content="Empty your head, break the screen habit and hand your week's planning to AI in a single weekend.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<!-- Tailwind CSS v4, precompiled (no CDN script at runtime) -->
+<style>/*! tailwindcss v4.3.3 | MIT License | https://tailwindcss.com */
+@layer properties;
+@layer theme, base, components, utilities;
+@layer theme {
+  :root, :host {
+    --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+    --leading-tight: 1.25;
+    --leading-snug: 1.375;
+    --default-font-family: var(--font-sans);
+    --default-mono-font-family: var(--font-mono);
+    --color-bg: #090A0F;
+    --color-ink: #EDEBE6;
+    --color-muted: #9A9DA8;
+    --color-dim: #62656F;
+    --color-mint: #7DF9C1;
+  }
+}
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+  }
+  html, :host {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: var(--default-font-family, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+    font-feature-settings: var(--default-font-feature-settings, normal);
+    font-variation-settings: var(--default-font-variation-settings, normal);
+    -webkit-tap-highlight-color: transparent;
+  }
+  hr {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px;
+  }
+  abbr:where([title]) {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  a {
+    color: inherit;
+    -webkit-text-decoration: inherit;
+    text-decoration: inherit;
+  }
+  b, strong {
+    font-weight: bolder;
+  }
+  code, kbd, samp, pre {
+    font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
+    font-feature-settings: var(--default-mono-font-feature-settings, normal);
+    font-variation-settings: var(--default-mono-font-variation-settings, normal);
+    font-size: 1em;
+  }
+  small {
+    font-size: 80%;
+  }
+  sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  sup {
+    top: -0.5em;
+  }
+  table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+  }
+  :-moz-focusring:where(:not(iframe)) {
+    outline: auto;
+  }
+  progress {
+    vertical-align: baseline;
+  }
+  summary {
+    display: list-item;
+  }
+  ol, ul, menu {
+    list-style: none;
+  }
+  img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+  }
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  button, input, select, optgroup, textarea, ::file-selector-button {
+    font: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+  }
+  :where(select:is([multiple], [size])) optgroup {
+    font-weight: bolder;
+  }
+  :where(select:is([multiple], [size])) optgroup option {
+    padding-inline-start: 20px;
+  }
+  ::file-selector-button {
+    margin-inline-end: 4px;
+  }
+  ::placeholder {
+    opacity: 1;
+  }
+  @supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
+    ::placeholder {
+      color: currentcolor;
+      @supports (color: color-mix(in lab, red, red)) {
+        color: color-mix(in oklab, currentcolor 50%, transparent);
+      }
+    }
+  }
+  textarea {
+    resize: vertical;
+  }
+  ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  ::-webkit-date-and-time-value {
+    min-height: 1lh;
+    text-align: inherit;
+  }
+  ::-webkit-datetime-edit {
+    display: inline-flex;
+  }
+  ::-webkit-datetime-edit-fields-wrapper {
+    padding: 0;
+  }
+  ::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
+    padding-block: 0;
+  }
+  ::-webkit-calendar-picker-indicator {
+    line-height: 1;
+  }
+  :-moz-ui-invalid {
+    box-shadow: none;
+  }
+  button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-selector-button {
+    appearance: button;
+  }
+  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    height: auto;
+  }
+  [hidden]:where(:not([hidden="until-found"])) {
+    display: none !important;
+  }
+}
+@layer utilities {
+  .fixed {
+    position: fixed;
+  }
+  .sticky {
+    position: sticky;
+  }
+  .isolate {
+    isolation: isolate;
+  }
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .mt-1 {
+    margin-top: var(--spacing);
+  }
+  .mt-1\.5 {
+    margin-top: calc(var(--spacing) * 1.5);
+  }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
+  }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
+  .mt-7 {
+    margin-top: calc(var(--spacing) * 7);
+  }
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
+  }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
+  .mr-2 {
+    margin-right: calc(var(--spacing) * 2);
+  }
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
+  .block {
+    display: block;
+  }
+  .flex {
+    display: flex;
+  }
+  .hidden {
+    display: none;
+  }
+  .max-w-\[480px\] {
+    max-width: 480px;
+  }
+  .min-w-0 {
+    min-width: 0px;
+  }
+  .flex-none {
+    flex: none;
+  }
+  .transform {
+    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .resize {
+    resize: both;
+  }
+  .items-baseline {
+    align-items: baseline;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-end {
+    justify-content: flex-end;
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
+  :where(.space-y-1\.5 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 1.5) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 1.5) * calc(1 - var(--tw-space-y-reverse)));
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .rounded-\[18px\] {
+    border-radius: 18px;
+  }
+  .rounded-\[22px\] {
+    border-radius: 22px;
+  }
+  .rounded-\[24px\] {
+    border-radius: 24px;
+  }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
+  .border-white\/\[\.07\] {
+    border-color: color-mix(in srgb, #fff 7.000000000000001%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 7.000000000000001%, transparent);
+    }
+  }
+  .bg-bg {
+    background-color: var(--color-bg);
+  }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
+  .px-\[18px\] {
+    padding-inline: 18px;
+  }
+  .py-1\.5 {
+    padding-block: calc(var(--spacing) * 1.5);
+  }
+  .py-14 {
+    padding-block: calc(var(--spacing) * 14);
+  }
+  .pt-1\.5 {
+    padding-top: calc(var(--spacing) * 1.5);
+  }
+  .pt-4 {
+    padding-top: calc(var(--spacing) * 4);
+  }
+  .pt-6 {
+    padding-top: calc(var(--spacing) * 6);
+  }
+  .pt-\[112px\] {
+    padding-top: 112px;
+  }
+  .pb-1 {
+    padding-bottom: var(--spacing);
+  }
+  .pb-10 {
+    padding-bottom: calc(var(--spacing) * 10);
+  }
+  .pb-12 {
+    padding-bottom: calc(var(--spacing) * 12);
+  }
+  .text-center {
+    text-align: center;
+  }
+  .font-sans {
+    font-family: var(--font-sans);
+  }
+  .text-\[1\.85rem\] {
+    font-size: 1.85rem;
+  }
+  .text-\[2\.15rem\] {
+    font-size: 2.15rem;
+  }
+  .text-\[12\.5px\] {
+    font-size: 12.5px;
+  }
+  .text-\[12px\] {
+    font-size: 12px;
+  }
+  .text-\[13\.5px\] {
+    font-size: 13.5px;
+  }
+  .text-\[13px\] {
+    font-size: 13px;
+  }
+  .text-\[14\.5px\] {
+    font-size: 14.5px;
+  }
+  .text-\[14px\] {
+    font-size: 14px;
+  }
+  .text-\[15px\] {
+    font-size: 15px;
+  }
+  .text-\[16\.5px\] {
+    font-size: 16.5px;
+  }
+  .text-\[16px\] {
+    font-size: 16px;
+  }
+  .text-\[17px\] {
+    font-size: 17px;
+  }
+  .text-\[19px\] {
+    font-size: 19px;
+  }
+  .text-\[21px\] {
+    font-size: 21px;
+  }
+  .text-\[26px\] {
+    font-size: 26px;
+  }
+  .leading-\[1\.1\] {
+    --tw-leading: 1.1;
+    line-height: 1.1;
+  }
+  .leading-\[1\.5\] {
+    --tw-leading: 1.5;
+    line-height: 1.5;
+  }
+  .leading-\[1\.06\] {
+    --tw-leading: 1.06;
+    line-height: 1.06;
+  }
+  .leading-\[1\.6\] {
+    --tw-leading: 1.6;
+    line-height: 1.6;
+  }
+  .leading-\[1\.45\] {
+    --tw-leading: 1.45;
+    line-height: 1.45;
+  }
+  .leading-\[1\.55\] {
+    --tw-leading: 1.55;
+    line-height: 1.55;
+  }
+  .leading-snug {
+    --tw-leading: var(--leading-snug);
+    line-height: var(--leading-snug);
+  }
+  .leading-tight {
+    --tw-leading: var(--leading-tight);
+    line-height: var(--leading-tight);
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-extrabold {
+    --tw-font-weight: var(--font-weight-extrabold);
+    font-weight: var(--font-weight-extrabold);
+  }
+  .tracking-\[-0\.02em\] {
+    --tw-tracking: -0.02em;
+    letter-spacing: -0.02em;
+  }
+  .tracking-\[-0\.03em\] {
+    --tw-tracking: -0.03em;
+    letter-spacing: -0.03em;
+  }
+  .tracking-\[-0\.015em\] {
+    --tw-tracking: -0.015em;
+    letter-spacing: -0.015em;
+  }
+  .tracking-\[-0\.035em\] {
+    --tw-tracking: -0.035em;
+    letter-spacing: -0.035em;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-\[\#B9B7B2\] {
+    color: #B9B7B2;
+  }
+  .text-\[\#C9C7C2\] {
+    color: #C9C7C2;
+  }
+  .text-dim {
+    color: var(--color-dim);
+  }
+  .text-ink {
+    color: var(--color-ink);
+  }
+  .text-mint {
+    color: var(--color-mint);
+  }
+  .text-muted {
+    color: var(--color-muted);
+  }
+  .antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .grayscale {
+    --tw-grayscale: grayscale(100%);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .filter {
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-space-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-drop-shadow-size {
+  syntax: "*";
+  inherits: false;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
+      --tw-space-y-reverse: 0;
+      --tw-border-style: solid;
+      --tw-leading: initial;
+      --tw-font-weight: initial;
+      --tw-tracking: initial;
+      --tw-blur: initial;
+      --tw-brightness: initial;
+      --tw-contrast: initial;
+      --tw-grayscale: initial;
+      --tw-hue-rotate: initial;
+      --tw-invert: initial;
+      --tw-opacity: initial;
+      --tw-saturate: initial;
+      --tw-sepia: initial;
+      --tw-drop-shadow: initial;
+      --tw-drop-shadow-color: initial;
+      --tw-drop-shadow-alpha: 100%;
+      --tw-drop-shadow-size: initial;
+    }
+  }
+}
+</style>
+
+<style>
+  /* Stesso ordine dei layer di Tailwind: i componenti stanno sopra il reset, sotto le utility. */
+  @layer theme, base, components, utilities;
+
+  @layer components {
+    :root {
+      --acc: 255 69 58;           /* colore vivo dell'HUD, cambia con lo scroll */
+      --sec: 255 69 58;           /* colore di ogni sezione */
+      --safe-t: env(safe-area-inset-top, 0px);
+      --safe-b: env(safe-area-inset-bottom, 0px);
+      --mint: 125 249 193;
+    }
+    * { -webkit-tap-highlight-color: transparent; }
+    html { background: #090A0F; scroll-behavior: smooth; }
+    body {
+      margin: 0; min-height: 100vh; overflow-x: hidden;
+      background: #090A0F; color: #EDEBE6;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: calc(108px + var(--safe-b));
+    }
+    .mono { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-variant-numeric: tabular-nums; }
+    a, button, input, label { -webkit-user-select: none; user-select: none; }
+    :focus-visible { outline: 2px solid rgb(var(--mint)); outline-offset: 3px; border-radius: 10px; }
+
+    /* Sfondo: il bagliore prende il colore dell'HUD */
+    #glow {
+      position: fixed; inset: 0; z-index: -1; pointer-events: none;
+      background:
+        radial-gradient(110% 55% at 50% -12%, rgb(var(--acc) / .20), transparent 68%),
+        radial-gradient(80% 38% at 50% 112%, rgb(var(--acc) / .09), transparent 70%),
+        #090A0F;
+    }
+
+    .glass {
+      background: rgb(18 20 29 / .74);
+      -webkit-backdrop-filter: blur(18px) saturate(140%);
+      backdrop-filter: blur(18px) saturate(140%);
+      border: 1px solid rgb(255 255 255 / .07);
+      box-shadow: inset 0 1px 0 rgb(255 255 255 / .04);
+    }
+    .edge {
+      border-color: rgb(var(--sec) / .30);
+      box-shadow: inset 0 1px 0 rgb(255 255 255 / .05), 0 0 0 1px rgb(var(--sec) / .05), 0 0 34px -14px rgb(var(--sec) / .55);
+    }
+
+    /* ---------- HUD "Tempo di utilizzo" ---------- */
+    .hud { position: fixed; z-index: 50; top: calc(var(--safe-t) + 8px); left: 0; right: 0; padding: 0 12px; pointer-events: none; }
+    .hud-panel {
+      max-width: 456px; margin: 0 auto; border-radius: 22px; padding: 12px 14px 12px;
+      background: rgb(18 20 29 / .80);
+      -webkit-backdrop-filter: blur(22px) saturate(150%); backdrop-filter: blur(22px) saturate(150%);
+      border: 1px solid rgb(var(--acc) / .30);
+      box-shadow: 0 14px 32px -14px rgb(0 0 0 / .9), 0 0 30px -12px rgb(var(--acc) / .6), inset 0 1px 0 rgb(255 255 255 / .05);
+      transition: padding .3s ease;
+    }
+    .hud-row { display: flex; align-items: flex-end; justify-content: space-between; gap: 10px; }
+    .hud-label, .hud-stat-label {
+      display: block; font-size: 12px; line-height: 1.25; color: #9A9DA8; white-space: nowrap;
+      max-height: 1.4em; overflow: hidden; transition: max-height .3s ease, opacity .25s ease;
+    }
+    .hud-time {
+      display: flex; align-items: center; gap: 8px; margin: 2px 0 0; white-space: nowrap;
+      font-size: 30px; font-weight: 700; letter-spacing: -.04em; line-height: 1.05;
+      color: rgb(var(--acc)); transition: font-size .3s ease;
+    }
+    .hud-delta {
+      font-size: 12px; font-weight: 700; letter-spacing: 0; padding: 3px 7px; border-radius: 99px;
+      color: #062016; background: rgb(var(--mint)); opacity: 0; transform: scale(.7); transition: opacity .3s, transform .3s;
+    }
+    .hud.is-final .hud-delta { opacity: 1; transform: none; }
+    .hud-stats { display: grid; gap: 3px; justify-items: end; }
+    .hud-stat { display: flex; align-items: baseline; gap: 8px; margin: 0; }
+    .hud-stat-val { display: inline-flex; align-items: center; font-size: 15px; font-weight: 700; color: #EDEBE6; white-space: nowrap; }
+    .hud-unit { display: none; font-weight: 500; color: #9A9DA8; margin-left: 4px; font-size: 12px; }
+    .hud-mono { display: none; font-weight: 500; color: rgb(var(--mint)); margin-left: 5px; font-size: 12px; }
+    .hud.is-final .hud-mono { display: inline; }
+    .batt { position: relative; display: inline-block; width: 23px; height: 11px; margin-right: 6px; border: 1.5px solid rgb(237 235 230 / .55); border-radius: 3.5px; }
+    .batt::after { content: ""; position: absolute; right: -4px; top: 3px; width: 2px; height: 3px; border-radius: 0 1px 1px 0; background: rgb(237 235 230 / .55); }
+    .batt i { position: absolute; left: 1.5px; top: 1.5px; bottom: 1.5px; width: calc((100% - 3px) * var(--b, .12)); border-radius: 1.5px; background: rgb(var(--acc)); }
+    .hud-bar { display: flex; height: 6px; margin-top: 10px; border-radius: 99px; background: rgb(255 255 255 / .06); overflow: hidden; }
+    .hud-bar i { display: block; height: 100%; flex: 0 0 auto; }
+    .hud-bar i + i { margin-left: 2px; }
+
+    .hud.is-compact .hud-panel { padding: 9px 14px 10px; }
+    .hud.is-compact .hud-label { max-height: 0; opacity: 0; }
+    .hud.is-compact .hud-stat-label { display: none; }
+    .hud.is-compact .hud-time { font-size: 21px; }
+    .hud.is-compact .hud-stats { display: flex; gap: 14px; align-items: center; }
+    .hud.is-compact .hud-unit { display: inline; }
+    .hud.is-compact.is-final .hud-unit { display: none; }
+    .hud.is-compact .hud-bar { margin-top: 8px; height: 4px; }
+
+    .hud-badge {
+      display: flex; align-items: center; gap: 7px; margin: 0; max-height: 0; opacity: 0; overflow: hidden;
+      font-size: 12.5px; font-weight: 600; color: rgb(var(--mint));
+      transition: max-height .35s ease, opacity .35s ease, margin .35s ease;
+    }
+    .hud-badge svg { width: 14px; height: 14px; flex: none; }
+    .hud.is-final .hud-badge { max-height: 1.8em; opacity: 1; margin-top: 8px; }
+
+    /* ---------- Hero ---------- */
+    .badge {
+      display: inline-flex; align-items: center; gap: 8px; padding: 6px 11px; border-radius: 99px;
+      font-size: 11px; font-weight: 700; letter-spacing: .06em; color: #FFB4AE;
+      background: rgb(255 69 58 / .10); border: 1px solid rgb(255 69 58 / .28);
+    }
+    .badge::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: #FF453A; box-shadow: 0 0 10px #FF453A; }
+
+    .pile {
+      position: relative; height: 148px; overflow: hidden;
+      display: flex; flex-wrap: wrap; align-content: flex-start; justify-content: center; gap: 6px 4px; padding-top: 6px;
+      -webkit-mask-image: linear-gradient(#000 62%, transparent); mask-image: linear-gradient(#000 62%, transparent);
+    }
+    .chip {
+      display: inline-flex; align-items: center; gap: 7px; padding: 7px 12px 7px 10px; border-radius: 99px;
+      font-size: 13px; font-weight: 500; color: #F2D9D6; white-space: nowrap;
+      background: #1E1012; border: 1px solid rgb(255 69 58 / .55);
+      transform: rotate(var(--r, 0deg)); margin: 0 -10px -4px 0;
+      animation: chip-in .38s cubic-bezier(.2, .9, .3, 1.4) both; animation-delay: calc(var(--i) * 55ms + 250ms);
+    }
+    .chip::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: #FF453A; flex: none; }
+    .chip.more { color: #EDEBE6; background: #FF453A; border-color: #FF453A; font-weight: 700; }
+    .chip.more::before { display: none; }
+    @keyframes chip-in { from { opacity: 0; transform: translateY(10px) scale(.7) rotate(var(--r, 0deg)); } to { opacity: 1; transform: rotate(var(--r, 0deg)); } }
+
+    /* ---------- Bottoni ---------- */
+    .btn {
+      position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center;
+      width: 100%; min-height: 60px; padding: 10px 18px; border-radius: 18px; border: 0; cursor: pointer;
+      color: #04130D; background: rgb(var(--mint)); text-decoration: none; text-align: center;
+      font-weight: 800; font-size: 17px; letter-spacing: -.01em; line-height: 1.2;
+      box-shadow: 0 14px 34px -14px rgb(var(--mint) / .85), inset 0 1px 0 rgb(255 255 255 / .5);
+      transition: transform .12s ease, box-shadow .2s ease;
+    }
+    .btn:active { transform: scale(.98); }
+    .btn small { display: block; margin-top: 3px; font-size: 13px; font-weight: 600; color: #0C3A2A; }
+    .btn small s { opacity: .7; }
+    section[id] { scroll-margin-top: calc(var(--safe-t) + 112px); }
+
+    /* ---------- Diagnosi: elenco "utilizzo batteria" ---------- */
+    .proc { display: grid; grid-template-columns: 42px 1fr; gap: 14px; padding: 18px 18px 18px 16px; }
+    .proc + .proc { border-top: 1px solid rgb(255 255 255 / .06); }
+    .proc-ico { width: 42px; height: 42px; border-radius: 12px; display: grid; place-items: center; color: rgb(var(--sec)); background: rgb(var(--sec) / .12); border: 1px solid rgb(var(--sec) / .25); }
+    .proc-ico svg { width: 21px; height: 21px; }
+    .proc-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+    .proc-status { flex: none; font-size: 11.5px; color: rgb(var(--sec)); }
+
+    /* ---------- Moduli ---------- */
+    .steps { position: relative; margin: 0; padding: 0; list-style: none; }
+    .steps::before {
+      content: ""; position: absolute; left: 17px; top: 10px; bottom: 10px; width: 2px; border-radius: 2px;
+      background: linear-gradient(#FF9F0A, #FFC24A 25%, #22D3EE 70%, #34D399);
+      opacity: .45;
+    }
+    .mod { position: relative; display: grid; grid-template-columns: 36px 1fr; gap: 16px; padding-bottom: 44px; }
+    .mod:last-child { padding-bottom: 0; }
+    .mod-num {
+      position: relative; z-index: 1; width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center;
+      font-weight: 700; font-size: 15px; color: rgb(var(--sec)); background: #0D0F15; border: 1.5px solid rgb(var(--sec) / .8);
+      box-shadow: 0 0 18px -4px rgb(var(--sec) / .6);
+    }
+    .tag { display: inline-block; margin-left: 6px; padding: 2px 8px; border-radius: 99px; font-size: 11.5px; font-weight: 700; vertical-align: 3px; color: #04130D; background: rgb(var(--sec)); }
+
+    .phase { display: grid; grid-template-columns: 64px 1fr; gap: 10px; padding: 11px 0; border-top: 1px solid rgb(255 255 255 / .06); }
+    .phase:first-child { border-top: 0; }
+    .phase-t { font-size: 12.5px; color: rgb(var(--sec)); padding-top: 2px; }
+
+    .day { padding: 14px 16px; border-radius: 16px; }
+    .day + .day { margin-top: 8px; }
+    .day h4 { margin: 0; font-size: 15px; font-weight: 700; }
+    .day h4 span { font-weight: 500; color: #9A9DA8; }
+    .day ul { margin: 8px 0 0; padding: 0; list-style: none; }
+    .day li { position: relative; padding-left: 16px; font-size: 14.5px; line-height: 1.5; color: #C9C7C2; }
+    .day li::before { content: ""; position: absolute; left: 2px; top: .62em; width: 5px; height: 5px; border-radius: 50%; background: rgb(var(--sec)); }
+
+    /* Simulatore scala di grigi */
+    .sim { border-radius: 22px; padding: 16px; margin-top: 16px; }
+    .sim-screen {
+      position: relative; border-radius: 26px; padding: 14px 16px 18px; background: #0B0C12;
+      border: 1px solid rgb(255 255 255 / .08); transition: filter .6s ease;
+    }
+    .sim-screen.is-gray { filter: grayscale(1) contrast(.92) brightness(.92); }
+    .sim-status { display: flex; justify-content: space-between; font-size: 12px; font-weight: 600; color: #EDEBE6; padding: 0 4px 10px; }
+    .sim-banner { display: flex; gap: 10px; align-items: center; padding: 9px 11px; border-radius: 14px; background: rgb(255 255 255 / .09); margin-bottom: 14px; }
+    .sim-banner b { display: block; font-size: 12.5px; }
+    .sim-banner span { display: block; font-size: 12px; color: #B9B7B2; }
+    .sim-banner .app { width: 30px; height: 30px; border-radius: 8px; flex: none; }
+    .grid-apps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px 12px; }
+    .app { position: relative; aspect-ratio: 1; border-radius: 22%; display: grid; place-items: center; }
+    .app::after { content: ""; display: block; background: #fff; }
+    .g-dot::after { width: 38%; height: 38%; border-radius: 50%; }
+    .g-ring::after { width: 38%; height: 38%; border-radius: 50%; background: transparent; border: 3px solid #fff; }
+    .g-play::after { width: 34%; height: 38%; clip-path: polygon(10% 0, 100% 50%, 10% 100%); }
+    .g-sq::after { width: 40%; height: 32%; border-radius: 5px; }
+    .g-lines::after { width: 42%; height: 36%; background: repeating-linear-gradient(#fff 0 3px, transparent 3px 7px); }
+    .g-four::after { width: 40%; height: 40%; background: radial-gradient(circle, #fff 34%, transparent 36%) 0 0 / 50% 50%; }
+    .bdg {
+      position: absolute; top: -6px; right: -6px; min-width: 20px; height: 20px; padding: 0 5px; border-radius: 99px;
+      display: grid; place-items: center; font-size: 11px; font-weight: 700; color: #fff; background: #FF3B30;
+      border: 2px solid #0B0C12;
+    }
+    .sim-ctl { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 14px; }
+    .switch {
+      position: relative; width: 58px; height: 34px; flex: none; border-radius: 99px; border: 0; cursor: pointer;
+      background: rgb(255 255 255 / .16); transition: background .25s ease;
+    }
+    .switch::after {
+      content: ""; position: absolute; top: 3px; left: 3px; width: 28px; height: 28px; border-radius: 50%;
+      background: #fff; box-shadow: 0 2px 6px rgb(0 0 0 / .4); transition: transform .25s cubic-bezier(.3, .8, .3, 1.2);
+    }
+    .switch[aria-checked="true"] { background: rgb(var(--mint)); }
+    .switch[aria-checked="true"]::after { transform: translateX(24px); }
+    .sim-pop {
+      margin-top: 12px; padding: 13px 14px; border-radius: 16px; font-size: 14px; line-height: 1.5; color: #D9F7EA;
+      background: rgb(var(--mint) / .08); border: 1px solid rgb(var(--mint) / .35);
+      animation: pop .35s cubic-bezier(.2, .9, .3, 1.2) both;
+    }
+    .sim-pop b { color: #fff; }
+    .sim-pop a { color: rgb(var(--mint)); }
+    @keyframes pop { from { opacity: 0; transform: translateY(6px) scale(.97); } to { opacity: 1; transform: none; } }
+
+    /* Terminale AI */
+    .term { margin-top: 16px; border-radius: 20px; overflow: hidden; background: #07080C; border: 1px solid rgb(var(--sec) / .35); box-shadow: 0 0 34px -16px rgb(var(--sec) / .6); }
+    .term-bar { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 9px 10px 9px 14px; border-bottom: 1px solid rgb(255 255 255 / .07); font-size: 12.5px; color: #9A9DA8; }
+    .term-bar b { color: #EDEBE6; font-weight: 600; }
+    .term-tasks { display: flex; gap: 6px; padding: 12px 14px 0; overflow-x: auto; scrollbar-width: none; }
+    .term-tasks::-webkit-scrollbar { display: none; }
+    .term-task {
+      flex: none; padding: 7px 12px; border-radius: 99px; cursor: pointer; font-size: 13px; font-weight: 600; color: #C9C7C2;
+      background: rgb(255 255 255 / .05); border: 1px solid rgb(255 255 255 / .1);
+    }
+    .term-task[aria-checked="true"] { color: #031A1F; background: rgb(var(--sec)); border-color: rgb(var(--sec)); }
+    .term-out {
+      margin: 0; padding: 14px; min-height: 236px; white-space: pre-wrap; word-break: break-word;
+      font-size: 12.5px; line-height: 1.6; color: #C9D1D9;
+    }
+    .term-out .p { color: rgb(var(--sec)); }
+    .term-out .d { color: #6E7380; }
+    .term-out .ok { color: rgb(var(--mint)); font-weight: 700; }
+    .term-out .caret { display: inline-block; width: 7px; height: 1.05em; vertical-align: -2px; background: rgb(var(--sec)); animation: blink 1s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    .term-actions { padding: 0 14px 14px; }
+    .term-actions .btn-term { width: 100%; }
+    .btn-copy {
+      flex: none; padding: 6px 11px; border-radius: 10px; cursor: pointer; font-size: 12.5px; font-weight: 700;
+      color: #EDEBE6; background: rgb(255 255 255 / .07); border: 1px solid rgb(255 255 255 / .14);
+    }
+    .btn-term {
+      min-height: 48px; padding: 0 14px; border-radius: 14px; border: 0; cursor: pointer;
+      font-size: 14.5px; font-weight: 800; color: #031A1F; background: rgb(var(--sec));
+    }
+    .btn-term[disabled] { opacity: .5; cursor: default; }
+    .btn-ghost {
+      min-height: 48px; padding: 0 14px; border-radius: 14px; cursor: pointer;
+      font-size: 14px; font-weight: 700; color: #EDEBE6; background: rgb(255 255 255 / .06); border: 1px solid rgb(255 255 255 / .12);
+    }
+    .timer { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin: 0 14px 14px; padding: 10px 10px 10px 14px; border-radius: 14px; background: rgb(var(--mint) / .08); border: 1px solid rgb(var(--mint) / .3); }
+    .timer .mono { font-size: 22px; font-weight: 700; color: rgb(var(--mint)); }
+
+    /* Menu della dopamina */
+    .menu { padding: 18px 18px 8px; border-radius: 20px; }
+    .menu-h { margin: 0 0 4px; font-size: 13px; color: #9A9DA8; text-align: center; font-style: italic; }
+    .menu-row { padding: 12px 0; border-top: 1px dashed rgb(255 255 255 / .1); }
+    .menu-row:first-of-type { border-top: 0; }
+    .menu-line { display: flex; align-items: baseline; gap: 8px; }
+    .menu-line b { font-size: 16px; }
+    .menu-line i { flex: 1; border-bottom: 2px dotted rgb(255 255 255 / .18); transform: translateY(-4px); }
+    .menu-line span { font-size: 12.5px; color: rgb(var(--sec)); }
+    .menu-row p { margin: 3px 0 0; font-size: 14px; color: #A9ABB4; }
+
+    .sos { display: grid; grid-template-columns: 72px 1fr; gap: 10px; padding: 12px 0; border-top: 1px solid rgb(255 255 255 / .06); }
+    .sos:first-child { border-top: 0; }
+    .sos .mono { font-size: 13px; font-weight: 700; color: rgb(var(--sec)); padding-top: 1px; }
+
+    /* ---------- Checkout ---------- */
+    .incl { margin: 0; padding: 0; list-style: none; }
+    .incl li { display: grid; grid-template-columns: 22px 1fr; gap: 10px; padding: 7px 0; font-size: 15px; line-height: 1.45; color: #D7D5D0; }
+    .incl svg { width: 18px; height: 18px; margin-top: 2px; color: rgb(var(--mint)); }
+    .bump {
+      display: grid; grid-template-columns: 28px 1fr; gap: 12px; padding: 14px; border-radius: 16px; cursor: pointer;
+      background: rgb(255 255 255 / .03); border: 1.5px dashed rgb(var(--mint) / .45); transition: background .2s, border-color .2s;
+    }
+    .bump:has(input:checked) { background: rgb(var(--mint) / .09); border-style: solid; border-color: rgb(var(--mint)); }
+    .bump input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+    .bump .box { width: 26px; height: 26px; border-radius: 8px; display: grid; place-items: center; border: 2px solid rgb(var(--mint) / .7); transition: background .15s; }
+    .bump .box svg { width: 16px; height: 16px; color: #04130D; opacity: 0; transform: scale(.5); transition: opacity .15s, transform .2s cubic-bezier(.3, .8, .3, 1.4); }
+    .bump input:checked + .box { background: rgb(var(--mint)); border-color: rgb(var(--mint)); }
+    .bump input:checked + .box svg { opacity: 1; transform: none; }
+    .bump input:focus-visible + .box { outline: 2px solid rgb(var(--mint)); outline-offset: 3px; }
+    .sum-row { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+
+    /* ---------- Sticky bar ---------- */
+    .sticky { position: fixed; z-index: 50; left: 0; right: 0; bottom: 0; padding: 10px 12px calc(10px + var(--safe-b)); pointer-events: none; transition: transform .35s ease, opacity .3s ease; }
+    .sticky.is-hidden { transform: translateY(115%); opacity: 0; }
+    .sticky-in {
+      max-width: 456px; margin: 0 auto; pointer-events: auto; display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      padding: 9px 9px 9px 18px; border-radius: 22px;
+      background: rgb(18 20 29 / .86); -webkit-backdrop-filter: blur(22px) saturate(150%); backdrop-filter: blur(22px) saturate(150%);
+      border: 1px solid rgb(255 255 255 / .09); box-shadow: 0 -10px 34px -14px rgb(0 0 0 / .9);
+    }
+    .sticky .btn { width: auto; min-height: 52px; padding: 0 20px; font-size: 16px; border-radius: 15px; flex: none; }
+
+    .toast {
+      position: fixed; z-index: 60; left: 50%; bottom: calc(96px + var(--safe-b)); max-width: calc(100% - 32px);
+      padding: 11px 16px; border-radius: 14px; font-size: 14px; font-weight: 600; color: #04130D; background: rgb(var(--mint));
+      transform: translate(-50%, 16px); opacity: 0; pointer-events: none; transition: opacity .25s, transform .25s;
+    }
+    .toast.is-on { opacity: 1; transform: translate(-50%, 0); }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: .01ms !important; animation-delay: 0ms !important; transition-duration: .01ms !important; }
+    }
+  }
+  @layer components {
+    /* typing must stay possible inside fields (the page disables text selection on controls) */
+    input, textarea, select { -webkit-user-select: text; user-select: text; }
+    button.btn { font-family: inherit; }
+    .btn[disabled] { opacity: .65; cursor: progress; }
+
+    /* language picker */
+    .lang {
+      display: inline-flex; align-items: center; gap: 6px; padding: 5px 8px 5px 10px; border-radius: 99px;
+      font-size: 13px; font-weight: 600; color: #C9C7C2; background: rgb(255 255 255 / .05); border: 1px solid rgb(255 255 255 / .12);
+    }
+    .lang svg { width: 15px; height: 15px; flex: none; }
+    .lang select {
+      appearance: none; -webkit-appearance: none; background-color: transparent; border: 0; color: inherit; font: inherit; cursor: pointer;
+      padding: 2px 18px 2px 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='%23C9C7C2' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m3 4.5 3 3 3-3'/%3E%3C/svg%3E");
+      background-repeat: no-repeat; background-position: right 2px center; background-size: 12px;
+    }
+    .lang select option { color: #111; }
+
+    /* terminal: free lite prompt + locked full version */
+    .term-bar b { display: block; }
+    .lite-tag { display: inline-block; margin-top: 3px; padding: 1px 8px; border-radius: 99px; font-size: 11.5px; font-weight: 600; color: rgb(var(--sec)); background: rgb(var(--sec) / .12); border: 1px solid rgb(var(--sec) / .3); white-space: nowrap; }
+    .term-actions { display: grid; grid-template-columns: 1fr auto; gap: 8px; padding: 0 14px 14px; }
+    .term-full { margin: 0 14px 14px; padding: 14px; border-radius: 14px; background: rgb(var(--mint) / .06); border: 1px dashed rgb(var(--mint) / .4); }
+    .term-full-h { display: flex; align-items: center; gap: 8px; margin: 0; font-size: 14.5px; font-weight: 700; color: #EDEBE6; }
+    .term-full-h svg { width: 16px; height: 16px; flex: none; color: rgb(var(--mint)); }
+    .term-full-p { margin: 6px 0 12px; font-size: 13.5px; line-height: 1.5; color: #B9B7B2; }
+    .term-full .btn-term { width: 100%; background: rgb(var(--mint)); color: #04130D; }
+    .term-get { display: grid; place-items: center; text-decoration: none; }
+    .term-get[hidden], .btn-term[hidden] { display: none; }
+
+    /* checkout: email */
+    .field { display: block; }
+    .field-label { display: block; margin-bottom: 6px; font-size: 14px; font-weight: 600; color: #EDEBE6; }
+    .field input {
+      width: 100%; min-height: 52px; padding: 0 14px; border-radius: 14px; font-size: 16px; color: #EDEBE6;
+      background: rgb(255 255 255 / .05); border: 1.5px solid rgb(255 255 255 / .16); outline: none;
+    }
+    .field input::placeholder { color: #62656F; }
+    .field input:focus { border-color: rgb(var(--mint)); box-shadow: 0 0 0 3px rgb(var(--mint) / .18); }
+    .field input[aria-invalid="true"] { border-color: #FF453A; }
+    .field-help { margin: 6px 0 0; font-size: 12.5px; color: #9A9DA8; }
+    .field-err { margin: 6px 0 0; font-size: 13px; font-weight: 600; color: #FF8A80; }
+    .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+  }
+</style>
+</head>
+
+<body class="bg-bg text-ink font-sans antialiased">
+<div id="glow" aria-hidden="true"></div>
+
+<!-- HUD: reacts to scroll -->
+<header id="hud" class="hud" aria-hidden="true">
+  <div class="hud-panel">
+    <div class="hud-row">
+      <div class="min-w-0">
+        <span class="hud-label" data-i18n="hud.label">Screen time today</span>
+        <p class="hud-time mono"><span id="hud-time">7h 42m</span><span id="hud-delta" class="hud-delta">−84%</span></p>
+      </div>
+      <div class="hud-stats">
+        <p class="hud-stat">
+          <span class="hud-stat-label" data-i18n="hud.tabs">Mental tabs open</span>
+          <span class="hud-stat-val mono"><span id="hud-tabs">40</span><span class="hud-unit" data-i18n="hud.unit">tabs</span><span class="hud-mono" data-i18n="hud.mono">(The Monolith)</span></span>
+        </p>
+        <p class="hud-stat">
+          <span class="hud-stat-label" data-i18n="hud.battery">Prefrontal battery</span>
+          <span class="hud-stat-val mono"><span class="batt"><i id="hud-batt"></i></span><span id="hud-bat">12%</span></span>
+        </p>
+      </div>
+    </div>
+    <div class="hud-bar" id="hud-bar">
+      <i style="background:#FF453A"></i><i style="background:#FF7A2E"></i><i style="background:#FF9F0A"></i><i style="background:#8A8D97"></i>
+    </div>
+    <p class="hud-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="hud.badge">Goal: +2 hours of life back every day</span></p>
+  </div>
+</header>
+
+<main class="mx-auto max-w-[480px] px-5">
+
+  <!-- 1. HERO -->
+  <section id="hero" class="pt-[112px] pb-12" style="--sec: 255 69 58">
+    <div class="flex justify-end mb-3">
+      <label class="lang">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18Z"/></svg>
+        <select id="lang" data-i18n-attr="aria-label:lang.label" aria-label="Language"><option value="en" selected>English</option><option value="it">Italiano</option></select>
+      </label>
+    </div>
+    <p class="badge" data-i18n="hero.badge">NEURO-PRODUCTIVITY SYSTEM + PRACTICAL AI</p>
+
+    <h1 class="mt-5 text-[2.15rem] leading-[1.06] font-extrabold tracking-[-0.035em] text-balance">
+      <span data-i18n="hero.h1a">40 tabs open in your brain and nothing gets finished?</span>
+      <span class="block mt-3" data-i18n="hero.h1b">Reset your mind in 72 hours.</span>
+    </h1>
+
+    <div class="pile mt-6" aria-hidden="true">
+      <span class="chip" style="--i:0;--r:-3deg" data-i18n="chips.0">the email you won't answer</span>
+      <span class="chip" style="--i:1;--r:2deg" data-i18n="chips.1">Friday's deadline</span>
+      <span class="chip" style="--i:2;--r:-1deg" data-i18n="chips.2">the stalled project</span>
+      <span class="chip" style="--i:3;--r:4deg" data-i18n="chips.3">the bill</span>
+      <span class="chip" style="--i:4;--r:-4deg" data-i18n="chips.4">the quote</span>
+      <span class="chip" style="--i:5;--r:1deg" data-i18n="chips.5">that message</span>
+      <span class="chip" style="--i:6;--r:-2deg" data-i18n="chips.6">the gym</span>
+      <span class="chip" style="--i:7;--r:3deg" data-i18n="chips.7">the résumé update</span>
+      <span class="chip" style="--i:8;--r:-3deg" data-i18n="chips.8">the phone call</span>
+      <span class="chip" style="--i:9;--r:2deg" data-i18n="chips.9">the presentation</span>
+      <span class="chip" style="--i:10;--r:-1deg" data-i18n="chips.10">the dentist</span>
+      <span class="chip" style="--i:11;--r:4deg" data-i18n="chips.11">the invoice</span>
+      <span class="chip" style="--i:12;--r:-4deg" data-i18n="chips.12">the course you started</span>
+      <span class="chip" style="--i:13;--r:2deg" data-i18n="chips.13">the exam</span>
+      <span class="chip" style="--i:14;--r:-2deg" data-i18n="chips.14">that reply</span>
+      <span class="chip more mono" style="--i:15;--r:3deg" data-i18n="chips_more">+24 more</span>
+    </div>
+
+    <p class="mt-4 text-[17px] leading-[1.55] text-[#C9C7C2]" data-i18n="hero.sub">Empty your head, break your screen dependency and hand the planning of your week to artificial intelligence, in a single weekend.</p>
+
+    <a href="#offer" class="btn mt-7" id="hero-cta" data-scroll>
+      <span data-i18n="hero.cta">Get the 72H Reset Protocol</span>
+      <small data-i18n="hero.cta_small">€14.90 instead of <s>€39.00</s></small>
+    </a>
+    <p class="mt-3 text-center text-[13px] text-muted" data-i18n="hero.note">Digital product: operating manual and workbook, ready to use this weekend.</p>
+  </section>
+
+  <!-- 2. DIAGNOSIS -->
+  <section id="diagnosis" class="py-14" style="--sec: 255 122 46">
+    <h2 class="text-[1.85rem] leading-[1.1] font-extrabold tracking-[-0.03em] text-balance" data-i18n="diag.h2">You're not lazy. You're the victim of a neurobiological hijack.</h2>
+    <p class="mt-4 text-[16.5px] leading-[1.55] text-[#C9C7C2]" data-i18n="diag.sub">It's not a character flaw. It's four processes running in the background, draining you before you even start.</p>
+
+    <div class="glass edge mt-8 rounded-[22px] overflow-hidden">
+      <div class="flex items-center justify-between px-[18px] pt-4 pb-1 text-[12.5px] text-muted">
+        <span data-i18n="diag.card">Prefrontal battery usage</span><span class="mono" data-i18n="diag.period">last 24 hours</span>
+      </div>
+
+      <article class="proc">
+        <div class="proc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 9 5-9 5-9-5 9-5Z"/><path d="m3 12 9 5 9-5"/><path d="m3 17 9 5 9-5"/></svg></div>
+        <div>
+          <div class="proc-head"><h3 class="text-[16px] font-bold" data-i18n="diag.p.0.t">Zeigarnik effect</h3><span class="proc-status mono" data-i18n="diag.p.0.s">In background</span></div>
+          <p class="mt-1.5 text-[14.5px] leading-[1.55] text-[#B9B7B2]" data-i18n="diag.p.0.x">Every task you start and don’t finish keeps a channel open in your prefrontal cortex, like a heavy app left running in the background that drains your mental battery.</p>
+        </div>
+      </article>
+
+      <article class="proc">
+        <div class="proc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></div>
+        <div>
+          <div class="proc-head"><h3 class="text-[16px] font-bold" data-i18n="diag.p.1.t">Amygdala flight response</h3><span class="proc-status mono" data-i18n="diag.p.1.s">Flight active</span></div>
+          <p class="mt-1.5 text-[14.5px] leading-[1.55] text-[#B9B7B2]" data-i18n="diag.p.1.x">Past the saturation point, your brain reads your to-do list as a threat and pushes you toward the zero-cost dopamine of your smartphone.</p>
+        </div>
+      </article>
+
+      <article class="proc">
+        <div class="proc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h3l2-6 3 12 3-9 2 5 2-2h5"/></svg></div>
+        <div>
+          <div class="proc-head"><h3 class="text-[16px] font-bold" data-i18n="diag.p.2.t">Brainwave sabotage</h3><span class="proc-status mono" data-i18n="diag.p.2.s">Beta since 7:02</span></div>
+          <p class="mt-1.5 text-[14.5px] leading-[1.55] text-[#B9B7B2]" data-i18n="diag.p.2.x">Checking notifications the moment you wake up yanks your brain out of calm, creative alpha and theta waves and into the anxious, reactive beta state your whole day then starts from.</p>
+        </div>
+      </article>
+
+      <article class="proc">
+        <div class="proc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10 6h4"/><path d="m9 15 3 3 3-3"/><path d="M12 10v8"/></svg></div>
+        <div>
+          <div class="proc-head"><h3 class="text-[16px] font-bold" data-i18n="diag.p.3.t">The social-break trap</h3><span class="proc-status mono" data-i18n="diag.p.3.s">Never on break</span></div>
+          <p class="mt-1.5 text-[14.5px] leading-[1.55] text-[#B9B7B2]" data-i18n="diag.p.3.x">Scrolling your feed for 5 minutes doesn’t rest your mind: it forces it to process hundreds of visual stimuli and emotional micro-reactions a minute.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 3. MODULES -->
+  <section id="modules" class="py-14" style="--sec: 255 159 10">
+    <h2 class="text-[1.85rem] leading-[1.1] font-extrabold tracking-[-0.03em]" data-i18n="mods.h2">It works by subtraction.</h2>
+    <p class="mt-4 text-[16.5px] leading-[1.55] text-[#C9C7C2]" data-i18n="mods.sub">A practical system split into quick steps you can apply today.</p>
+
+    <ol class="steps mt-10">
+
+      <!-- Module 1 -->
+      <li class="mod" style="--sec: 255 159 10">
+        <div class="mod-num mono">1</div>
+        <div>
+          <h3 class="text-[19px] leading-tight font-extrabold tracking-[-0.015em] pt-1.5" data-i18n="m1.title">The 15-Minute Mental Triage</h3>
+          <p class="mt-2 text-[15px] leading-[1.55] text-[#B9B7B2]" data-i18n="m1.sub">Stop the mental energy bleed in three 5-minute phases.</p>
+          <div class="glass mt-4 rounded-[18px] px-4 py-1.5">
+            <div class="phase"><span class="phase-t mono">0–5′</span><p class="text-[14.5px] leading-[1.5]" data-i18n="m1.ph.0"><b>Brain dump.</b> Everything in your head goes onto a sheet of paper.</p></div>
+            <div class="phase"><span class="phase-t mono">5–10′</span><p class="text-[14.5px] leading-[1.5]" data-i18n="m1.ph.1"><b>30-day filter.</b> You cut whatever won’t matter a month from now.</p></div>
+            <div class="phase"><span class="phase-t mono">10–15′</span><p class="text-[14.5px] leading-[1.5]" data-i18n="m1.ph.2"><b>The Monolith.</b> You isolate the one task that, once closed, lifts the biggest weight off you by lunchtime tomorrow.</p></div>
+          </div>
+          <p class="mt-3 text-[14px] text-muted" data-i18n="m1.extra">Plus: the operational Sorting Matrix.</p>
+        </div>
+      </li>
+
+      <!-- Module 2 -->
+      <li class="mod" style="--sec: 255 194 74">
+        <div class="mod-num mono">2</div>
+        <div>
+          <h3 class="text-[19px] leading-tight font-extrabold tracking-[-0.015em] pt-1.5" data-i18n="m2.title">The 72-Hour Operating Protocol</h3>
+          <p class="mt-2 text-[15px] leading-[1.55] text-[#B9B7B2]" data-i18n="m2.sub">Three days, one goal per day.</p>
+
+          <div class="mt-4">
+            <div class="day glass">
+              <h4 data-i18n="m2.d.0.h">Friday night <span>· digital friction</span></h4>
+              <ul><li data-i18n="m2.d.0.li.0">Screen in grayscale</li><li data-i18n="m2.d.0.li.1">Log out of your 3 vampire apps</li><li data-i18n="m2.d.0.li.2">Charger 4 metres from your bed</li></ul>
+            </div>
+            <div class="day glass">
+              <h4 data-i18n="m2.d.1.h">Saturday <span>· monotasking</span></h4>
+              <ul><li data-i18n="m2.d.1.li.0">First hour blind, no phone</li><li data-i18n="m2.d.1.li.1">One 90-minute ultradian cycle on the Monolith</li><li data-i18n="m2.d.1.li.2">The Reset_Archive folder</li></ul>
+            </div>
+            <div class="day glass">
+              <h4 data-i18n="m2.d.2.h">Sunday <span>· clean dopamine</span></h4>
+              <ul><li data-i18n="m2.d.2.li.0">24 hours without vertical videos</li><li data-i18n="m2.d.2.li.1">10-minute planning at 6:00 PM</li><li data-i18n="m2.d.2.li.2">Screens off at 9:30 PM</li></ul>
+            </div>
+          </div>
+
+          <!-- Widget 1: grayscale simulator -->
+          <div class="sim glass edge">
+            <div class="sim-screen" id="sim-screen" aria-hidden="true">
+              <div class="sim-status mono"><span>21:47</span><span>4G ▮▮▮▯</span></div>
+              <div class="sim-banner">
+                <span class="app" style="background:#FF2D55"></span>
+                <div><b data-i18n="sim.notif_t">You have 12 new notifications</b><span data-i18n="sim.notif_s">See what you missed</span></div>
+              </div>
+              <div class="grid-apps">
+                <span class="app g-dot" style="background:#FF3B30"><span class="bdg">3</span></span>
+                <span class="app g-play" style="background:#FF9500"></span>
+                <span class="app g-ring" style="background:#FFCC00"></span>
+                <span class="app g-lines" style="background:#34C759"><span class="bdg">12</span></span>
+                <span class="app g-sq" style="background:#00C7BE"></span>
+                <span class="app g-four" style="background:#30B0C7"><span class="bdg">1</span></span>
+                <span class="app g-dot" style="background:#007AFF"></span>
+                <span class="app g-play" style="background:#5856D6"></span>
+                <span class="app g-ring" style="background:#AF52DE"><span class="bdg">27</span></span>
+                <span class="app g-lines" style="background:#FF2D55"></span>
+                <span class="app g-sq" style="background:#A2845E"></span>
+                <span class="app g-four" style="background:#FF6961"><span class="bdg">5</span></span>
+              </div>
+            </div>
+            <div class="sim-ctl">
+              <div>
+                <p class="text-[15px] font-bold" id="sim-label" data-i18n="sim.label">Test digital friction</p>
+                <p class="text-[13px] text-muted" id="sim-hint" data-i18n="sim.hint_off">Tap the switch: grayscale</p>
+              </div>
+              <button type="button" class="switch" id="sim-toggle" role="switch" aria-checked="false" aria-labelledby="sim-label"></button>
+            </div>
+            <div id="sim-pop" class="sim-pop" role="status" hidden data-i18n="sim.pop"><b>Less colour, less pull.</b> Bright icons and red badges are designed to make you tap. In black and white the phone pulls you in less: in studies, 20 to 50 fewer minutes of screen time a day. <a href="https://journals.sagepub.com/doi/10.1177/20501579231212062" target="_blank" rel="noopener">Source</a></div>
+          </div>
+        </div>
+      </li>
+
+      <!-- Module 3 -->
+      <li class="mod" style="--sec: 34 211 238">
+        <div class="mod-num mono">3</div>
+        <div>
+          <h3 class="text-[19px] leading-tight font-extrabold tracking-[-0.015em] pt-1.5" data-i18n="m3.title">The Vault of 5 Anti-Paralysis AI Prompts</h3>
+          <p class="mt-2 text-[15px] leading-[1.55] text-[#B9B7B2]" data-i18n="m3.sub">Copy-paste prompts for ChatGPT, Claude and Gemini.</p>
+          <ul class="mt-3 space-y-1.5 text-[14.5px] leading-[1.45]">
+            <li data-i18n="m3.li.0"><b>The De-Constructor</b> for giant projects</li>
+            <li data-i18n="m3.li.1"><b>The Architect</b> of your day in 60 seconds</li>
+            <li data-i18n="m3.li.2"><b>The Unblocker</b> for hard messages, with 3 ready drafts</li>
+            <li data-i18n="m3.li.3"><b>The Decision Filter</b> against overthinking (Pareto 80/20)</li>
+            <li data-i18n="m3.li.4"><b>The Evening Reset</b> in 3 questions</li>
+          </ul>
+
+          <!-- Widget 2: free lite prompt demo + preview of the full prompt -->
+          <div class="term">
+            <div class="term-bar">
+              <div class="min-w-0"><b data-i18n="term.title">De-Constructor AI</b><span class="lite-tag" data-i18n="term.tag">free lite version</span></div>
+              <button type="button" class="btn-copy" id="term-copy" data-i18n="term.copy">Copy prompt</button>
+            </div>
+            <div class="term-tasks" role="radiogroup" data-i18n-attr="aria-label:term.tasks_aria" aria-label="Choose the task that blocks you">
+              <button type="button" class="term-task" role="radio" aria-checked="true" data-task="0" data-i18n="term.tasks.0.chip">My thesis</button>
+              <button type="button" class="term-task" role="radio" aria-checked="false" data-task="1" data-i18n="term.tasks.1.chip">Work report</button>
+              <button type="button" class="term-task" role="radio" aria-checked="false" data-task="2" data-i18n="term.tasks.2.chip">Messy home</button>
+            </div>
+            <pre class="term-out mono" id="term-out" aria-live="polite"></pre>
+            <div class="term-actions">
+              <button type="button" class="btn-term" id="term-run" data-i18n="term.run">Run the free prompt</button>
+              <button type="button" class="btn-ghost" id="term-shuffle" data-i18n="term.shuffle">Another prompt</button>
+            </div>
+            <div class="term-full" id="term-full" hidden>
+              <p class="term-full-h"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><span data-i18n="term.full_title">The full prompt goes further</span></p>
+              <p class="term-full-p" data-i18n="term.full_text">The engineered De-Constructor gives steps of 10 minutes at most, a time for each one, and a first physical step you can take within 120 seconds. It comes with the other 4 prompts inside the Protocol.</p>
+              <button type="button" class="btn-term" id="term-reveal" data-i18n="term.reveal">See what the full prompt returns</button>
+              <a href="#offer" class="btn-term term-get" id="term-get" data-scroll hidden data-i18n="term.get">Get the 5 full prompts</a>
+            </div>
+            <div class="timer" id="term-timer" hidden>
+              <div>
+                <p class="text-[13px] text-muted" data-i18n="term.timer_label">First physical step</p>
+                <p class="mono" id="timer-val">02:00</p>
+              </div>
+              <button type="button" class="btn-ghost" id="timer-btn" data-i18n="term.timer_start">Start the 120 seconds</button>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <!-- Module 4 -->
+      <li class="mod" style="--sec: 45 212 191">
+        <div class="mod-num mono">4</div>
+        <div>
+          <h3 class="text-[19px] leading-tight font-extrabold tracking-[-0.015em] pt-1.5" data-i18n="m4.title">The Substitute Dopamine Menu</h3>
+          <p class="mt-2 text-[15px] leading-[1.55] text-[#B9B7B2]" data-i18n="m4.sub">Instead of compulsive scrolling, four pre-approved courses.</p>
+          <div class="menu glass mt-4">
+            <p class="menu-h" data-i18n="m4.head">Today's menu</p>
+            <div class="menu-row"><div class="menu-line"><b data-i18n="m4.r.0.n">Starters</b><i></i><span class="mono" data-i18n="m4.r.0.t">2–5 min</span></div><p data-i18n="m4.r.0.x">Short zero-screen breaks.</p></div>
+            <div class="menu-row"><div class="menu-line"><b data-i18n="m4.r.1.n">Mains</b><i></i><span class="mono" data-i18n="m4.r.1.t">30–60 min</span></div><p data-i18n="m4.r.1.x">Deep-recharge activities.</p></div>
+            <div class="menu-row"><div class="menu-line"><b data-i18n="m4.r.2.n">Sides</b><i></i><span class="mono" data-i18n="m4.r.2.t">in the background</span></div><p data-i18n="m4.r.2.x">Brown noise and soundtracks for boring tasks.</p></div>
+            <div class="menu-row"><div class="menu-line"><b data-i18n="m4.r.3.n">Dessert</b><i></i><span class="mono" data-i18n="m4.r.3.t">in the evening</span></div><p data-i18n="m4.r.3.x">The fun you like, inside clear limits.</p></div>
+          </div>
+        </div>
+      </li>
+
+      <!-- Module 5 -->
+      <li class="mod" style="--sec: 52 211 153">
+        <div class="mod-num mono">5</div>
+        <div>
+          <h3 class="text-[19px] leading-tight font-extrabold tracking-[-0.015em] pt-1.5" data-i18n="m5.title">5-Minute SOS Relapse Protocol <span class="tag">Bonus</span></h3>
+          <p class="mt-2 text-[15px] leading-[1.55] text-[#B9B7B2]" data-i18n="m5.sub">The emergency procedure for when you lose control midweek.</p>
+          <div class="glass mt-4 rounded-[18px] px-4 py-1.5">
+            <div class="sos"><span class="mono" data-i18n="m5.r.0.t">60 sec</span><p class="text-[14.5px] leading-[1.5]" data-i18n="m5.r.0.x"><b>Kinetic interrupt.</b> Cold water on your face or wrists.</p></div>
+            <div class="sos"><span class="mono" data-i18n="m5.r.1.t">120 sec</span><p class="text-[14.5px] leading-[1.5]" data-i18n="m5.r.1.x"><b>Blank-page reset</b> on a sticky note.</p></div>
+            <div class="sos"><span class="mono" data-i18n="m5.r.2.t">15 min</span><p class="text-[14.5px] leading-[1.5]" data-i18n="m5.r.2.x"><b>Visual timer barrier,</b> to reverse the inertia in the first 4 minutes.</p></div>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- 4. OFFER AND CHECKOUT -->
+  <section id="offer" class="py-14" style="--sec: 52 211 153">
+    <h2 class="text-[1.85rem] leading-[1.1] font-extrabold tracking-[-0.03em]" data-i18n="offer.h2">The price of two drinks.</h2>
+    <p class="mt-4 text-[16.5px] leading-[1.55] text-[#C9C7C2]" data-i18n="offer.sub">€14.90 instead of €39.00. In return you take home a method to win back your focus, and the time that today ends up in the feed.</p>
+
+    <div id="checkout" class="glass edge mt-8 rounded-[24px] p-5">
+      <p class="text-[13px] text-muted" data-i18n="co.your_order">Your order</p>
+      <h3 class="mt-1 text-[21px] font-extrabold tracking-[-0.02em]" data-i18n="product.name">72H Reset Protocol</h3>
+
+      <ul class="incl mt-4">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="co.incl.0">Operating manual with the 5 modules</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="co.incl.1">Interactive workbook: Triage tables and 72H checklist</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="co.incl.2">The 5 full AI prompts, ready to copy with one tap</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="co.incl.3">The Dopamine Menu to fill in</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="co.incl.4">The weekly grid, Monday to Friday</span></li>
+      </ul>
+
+      <div class="sum-row mt-5 pt-4 border-t border-white/[.07]">
+        <span class="text-[15px] text-[#C9C7C2]" data-i18n="product.name">72H Reset Protocol</span>
+        <span class="mono text-[15px]"><s class="text-dim mr-2" data-price="old">€39.00</s><b data-price="base">€14.90</b></span>
+      </div>
+
+      <label class="bump mt-4" for="bump">
+        <input type="checkbox" id="bump">
+        <span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+        <span>
+          <span class="flex items-baseline justify-between gap-3">
+            <b class="text-[15px] leading-snug" data-i18n="co.bump_title">Add the 5 audio tracks</b>
+            <b class="mono text-[15px] text-mint flex-none">+<span data-price="bump">€4.90</span></b>
+          </span>
+          <span class="mt-1 block text-[13.5px] leading-[1.5] text-[#B9B7B2]" data-i18n="co.bump_text">Brown noise and binaural frequencies, for your headphones during Saturday’s 90 minutes of monotasking.</span>
+        </span>
+      </label>
+
+      <form id="pay-form" novalidate>
+        <label class="field mt-5" for="email">
+          <span class="field-label" data-i18n="co.email_label">Your email</span>
+          <input id="email" name="email" type="email" inputmode="email" autocomplete="email" autocapitalize="off" spellcheck="false" required aria-describedby="email-help email-err" data-i18n-attr="placeholder:co.email_ph" placeholder="you@example.com">
+        </label>
+        <p class="field-help" id="email-help" data-i18n="co.email_help">Your download link arrives here right after payment.</p>
+        <p class="field-err" id="email-err" role="alert" hidden data-i18n="co.email_err">Enter a valid email address.</p>
+        <input type="text" name="company" id="hp" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <div class="sum-row mt-5">
+          <span class="text-[16px] font-bold" data-i18n="co.total">Total</span>
+          <span class="mono text-[26px] font-bold tracking-[-0.03em]" id="total" data-price="total">€14.90</span>
+        </div>
+
+        <button type="submit" class="btn mt-4" id="buy" data-i18n="co.buy">Unlock now for €14.90</button>
+      </form>
+      <p class="mt-3 text-center text-[13px] text-muted" data-i18n="co.pay_note">Secure payment with PayPal. Digital product, no shipping.</p>
+      <p class="mt-1.5 text-center text-[12px] text-dim" data-i18n="co.privacy">We use your email only to deliver your purchase.</p>
+    </div>
+  </section>
+
+  <footer class="pt-6 pb-10 text-[12.5px] leading-[1.6] text-dim">
+    <p data-i18n="footer">72H Reset Protocol is a personal organisation method and does not replace the advice of a doctor or psychologist. If you have been feeling overwhelmed for a long time, talk to a professional.</p>
+  </footer>
+</main>
+
+<!-- Sticky bar -->
+<div class="sticky" id="sticky">
+  <div class="sticky-in">
+    <div class="leading-tight">
+      <p class="mono text-[19px] font-bold" id="sticky-price" data-price="total">€14.90</p>
+      <p class="text-[12.5px] text-muted" data-i18n="sticky.old">instead of <s>€39.00</s></p>
+    </div>
+    <button type="button" class="btn" id="sticky-buy" data-i18n="sticky.buy">Unlock now</button>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+/* =========================================================
+   TEXTS: one block per language. To add a language, add a block
+   here (see "en" as the model). Nothing else needs to change.
+   ========================================================= */
+const I18N = {
+  "en": {
+    "_name": "English",
+    "_locale": "en-IE",
+    "meta": {
+      "title": "72H Reset Protocol – The anti-paralysis system for overloaded minds",
+      "desc": "Empty your head, break the screen habit and hand your week's planning to AI in a single weekend."
+    },
+    "lang": {
+      "label": "Language"
+    },
+    "product": {
+      "name": "72H Reset Protocol"
+    },
+    "hud": {
+      "label": "Screen time today",
+      "tabs": "Mental tabs open",
+      "unit": "tabs",
+      "mono": "(The Monolith)",
+      "battery": "Prefrontal battery",
+      "badge": "Goal: +2 hours of life back every day"
+    },
+    "hero": {
+      "badge": "NEURO-PRODUCTIVITY SYSTEM + PRACTICAL AI",
+      "h1a": "40 tabs open in your brain and nothing gets finished?",
+      "h1b": "Reset your mind in 72 hours.",
+      "sub": "Empty your head, break your screen dependency and hand the planning of your week to artificial intelligence, in a single weekend.",
+      "cta": "Get the 72H Reset Protocol",
+      "cta_small": "{price} instead of <s>{old}<\/s>",
+      "note": "Digital product: operating manual and workbook, ready to use this weekend."
+    },
+    "chips": [
+      "the email you won't answer",
+      "Friday's deadline",
+      "the stalled project",
+      "the bill",
+      "the quote",
+      "that message",
+      "the gym",
+      "the résumé update",
+      "the phone call",
+      "the presentation",
+      "the dentist",
+      "the invoice",
+      "the course you started",
+      "the exam",
+      "that reply"
+    ],
+    "chips_more": "+24 more",
+    "diag": {
+      "h2": "You're not lazy. You're the victim of a neurobiological hijack.",
+      "sub": "It's not a character flaw. It's four processes running in the background, draining you before you even start.",
+      "card": "Prefrontal battery usage",
+      "period": "last 24 hours",
+      "p": [
+        {
+          "t": "Zeigarnik effect",
+          "s": "In background",
+          "x": "Every task you start and don’t finish keeps a channel open in your prefrontal cortex, like a heavy app left running in the background that drains your mental battery."
+        },
+        {
+          "t": "Amygdala flight response",
+          "s": "Flight active",
+          "x": "Past the saturation point, your brain reads your to-do list as a threat and pushes you toward the zero-cost dopamine of your smartphone."
+        },
+        {
+          "t": "Brainwave sabotage",
+          "s": "Beta since 7:02",
+          "x": "Checking notifications the moment you wake up yanks your brain out of calm, creative alpha and theta waves and into the anxious, reactive beta state your whole day then starts from."
+        },
+        {
+          "t": "The social-break trap",
+          "s": "Never on break",
+          "x": "Scrolling your feed for 5 minutes doesn’t rest your mind: it forces it to process hundreds of visual stimuli and emotional micro-reactions a minute."
+        }
+      ]
+    },
+    "mods": {
+      "h2": "It works by subtraction.",
+      "sub": "A practical system split into quick steps you can apply today."
+    },
+    "m1": {
+      "title": "The 15-Minute Mental Triage",
+      "sub": "Stop the mental energy bleed in three 5-minute phases.",
+      "ph": [
+        "<b>Brain dump.<\/b> Everything in your head goes onto a sheet of paper.",
+        "<b>30-day filter.<\/b> You cut whatever won’t matter a month from now.",
+        "<b>The Monolith.<\/b> You isolate the one task that, once closed, lifts the biggest weight off you by lunchtime tomorrow."
+      ],
+      "extra": "Plus: the operational Sorting Matrix."
+    },
+    "m2": {
+      "title": "The 72-Hour Operating Protocol",
+      "sub": "Three days, one goal per day.",
+      "d": [
+        {
+          "h": "Friday night <span>· digital friction<\/span>",
+          "li": [
+            "Screen in grayscale",
+            "Log out of your 3 vampire apps",
+            "Charger 4 metres from your bed"
+          ]
+        },
+        {
+          "h": "Saturday <span>· monotasking<\/span>",
+          "li": [
+            "First hour blind, no phone",
+            "One 90-minute ultradian cycle on the Monolith",
+            "The Reset_Archive folder"
+          ]
+        },
+        {
+          "h": "Sunday <span>· clean dopamine<\/span>",
+          "li": [
+            "24 hours without vertical videos",
+            "10-minute planning at 6:00 PM",
+            "Screens off at 9:30 PM"
+          ]
+        }
+      ]
+    },
+    "sim": {
+      "notif_t": "You have 12 new notifications",
+      "notif_s": "See what you missed",
+      "label": "Test digital friction",
+      "hint_off": "Tap the switch: grayscale",
+      "hint_on": "Grayscale on",
+      "pop": "<b>Less colour, less pull.<\/b> Bright icons and red badges are designed to make you tap. In black and white the phone pulls you in less: in studies, 20 to 50 fewer minutes of screen time a day. <a href=\"https://journals.sagepub.com/doi/10.1177/20501579231212062\" target=\"_blank\" rel=\"noopener\">Source<\/a>"
+    },
+    "m3": {
+      "title": "The Vault of 5 Anti-Paralysis AI Prompts",
+      "sub": "Copy-paste prompts for ChatGPT, Claude and Gemini.",
+      "li": [
+        "<b>The De-Constructor<\/b> for giant projects",
+        "<b>The Architect<\/b> of your day in 60 seconds",
+        "<b>The Unblocker<\/b> for hard messages, with 3 ready drafts",
+        "<b>The Decision Filter<\/b> against overthinking (Pareto 80/20)",
+        "<b>The Evening Reset<\/b> in 3 questions"
+      ]
+    },
+    "term": {
+      "title": "De-Constructor AI",
+      "tag": "free lite version",
+      "copy": "Copy prompt",
+      "copied": "Copied",
+      "tasks_aria": "Choose the task that blocks you",
+      "run": "Run the free prompt",
+      "running": "Working…",
+      "rerun": "Run again",
+      "shuffle": "Another prompt",
+      "l_prompt": "> prompt · free lite version",
+      "l_answer": "> answer",
+      "l_generic": "(generic: no timings, no first move)",
+      "l_full": "> full De-Constructor · inside the Protocol",
+      "l_task": "Blocking task: {name}",
+      "l_steps": "Micro-steps, max 10 minutes each:",
+      "l_first": "First physical step, within 120 seconds:",
+      "full_title": "The full prompt goes further",
+      "full_text": "The engineered De-Constructor gives steps of 10 minutes at most, a time for each one, and a first physical step you can take within 120 seconds. It comes with the other 4 prompts inside the Protocol.",
+      "reveal": "See what the full prompt returns",
+      "get": "Get the 5 full prompts",
+      "timer_label": "First physical step",
+      "timer_start": "Start the 120 seconds",
+      "timer_stop": "Stop",
+      "timer_done": "Done. The rest weighs less now",
+      "copy_ok": "Free prompt copied: paste it into your AI",
+      "copy_fail": "Copy failed: press and hold the text to copy it",
+      "lite": [
+        "Break down \"{task}\" into smaller steps so I can get started.",
+        "I'm stuck on \"{task}\". Give me a simple to-do list.",
+        "Help me plan \"{task}\". List the main steps.",
+        "What should I do first for \"{task}\"? Keep it short."
+      ],
+      "tasks": [
+        {
+          "chip": "My thesis",
+          "name": "my thesis",
+          "lite": [
+            "Define the structure of the thesis",
+            "Research each chapter",
+            "Write a first draft",
+            "Review and finalise"
+          ],
+          "steps": [
+            [
+              "Open a new document and write only the chapter titles",
+              "5 min"
+            ],
+            [
+              "Under chapter one, dump 5 sentences, even ugly ones",
+              "10 min"
+            ],
+            [
+              "Find 3 sources for chapter one and paste the links",
+              "10 min"
+            ],
+            [
+              "Email your supervisor 3 lines with the plan",
+              "5 min"
+            ]
+          ],
+          "first": "Open your laptop, create the file \"thesis_v0\" and type the title."
+        },
+        {
+          "chip": "Work report",
+          "name": "my overdue work report",
+          "lite": [
+            "Gather the data you need",
+            "Outline the sections",
+            "Write the report",
+            "Proofread and send it"
+          ],
+          "steps": [
+            [
+              "List in 5 lines what the report must contain",
+              "5 min"
+            ],
+            [
+              "Collect last month's data in a single file",
+              "10 min"
+            ],
+            [
+              "Write the 3 main conclusions, no charts",
+              "10 min"
+            ],
+            [
+              "Draft the first page, even incomplete",
+              "10 min"
+            ]
+          ],
+          "first": "Open the project folder and rename the file \"report_draft\"."
+        },
+        {
+          "chip": "Messy home",
+          "name": "my messy home",
+          "lite": [
+            "Declutter room by room",
+            "Clean the surfaces",
+            "Organise what is left",
+            "Take out the rubbish"
+          ],
+          "steps": [
+            [
+              "Fill one bag with things to throw away, living room only",
+              "10 min"
+            ],
+            [
+              "Empty the sink and start the dishwasher",
+              "10 min"
+            ],
+            [
+              "Clear the table: everything on it goes into one box",
+              "5 min"
+            ],
+            [
+              "Vacuum one single room",
+              "10 min"
+            ]
+          ],
+          "first": "Stand up and carry the first glass you see to the kitchen."
+        }
+      ]
+    },
+    "m4": {
+      "title": "The Substitute Dopamine Menu",
+      "sub": "Instead of compulsive scrolling, four pre-approved courses.",
+      "head": "Today's menu",
+      "r": [
+        {
+          "n": "Starters",
+          "t": "2–5 min",
+          "x": "Short zero-screen breaks."
+        },
+        {
+          "n": "Mains",
+          "t": "30–60 min",
+          "x": "Deep-recharge activities."
+        },
+        {
+          "n": "Sides",
+          "t": "in the background",
+          "x": "Brown noise and soundtracks for boring tasks."
+        },
+        {
+          "n": "Dessert",
+          "t": "in the evening",
+          "x": "The fun you like, inside clear limits."
+        }
+      ]
+    },
+    "m5": {
+      "title": "5-Minute SOS Relapse Protocol <span class=\"tag\">Bonus<\/span>",
+      "sub": "The emergency procedure for when you lose control midweek.",
+      "r": [
+        {
+          "t": "60 sec",
+          "x": "<b>Kinetic interrupt.<\/b> Cold water on your face or wrists."
+        },
+        {
+          "t": "120 sec",
+          "x": "<b>Blank-page reset<\/b> on a sticky note."
+        },
+        {
+          "t": "15 min",
+          "x": "<b>Visual timer barrier,<\/b> to reverse the inertia in the first 4 minutes."
+        }
+      ]
+    },
+    "offer": {
+      "h2": "The price of two drinks.",
+      "sub": "{price} instead of {old}. In return you take home a method to win back your focus, and the time that today ends up in the feed."
+    },
+    "co": {
+      "your_order": "Your order",
+      "incl": [
+        "Operating manual with the 5 modules",
+        "Interactive workbook: Triage tables and 72H checklist",
+        "The 5 full AI prompts, ready to copy with one tap",
+        "The Dopamine Menu to fill in",
+        "The weekly grid, Monday to Friday"
+      ],
+      "bump_title": "Add the 5 audio tracks",
+      "bump_text": "Brown noise and binaural frequencies, for your headphones during Saturday’s 90 minutes of monotasking.",
+      "email_label": "Your email",
+      "email_ph": "you@example.com",
+      "email_help": "Your download link arrives here right after payment.",
+      "email_err": "Enter a valid email address.",
+      "total": "Total",
+      "buy": "Unlock now for {total}",
+      "buy_bundle": "Unlock the full bundle for {total}",
+      "buy_loading": "Opening secure payment…",
+      "pay_note": "Secure payment with PayPal. Digital product, no shipping.",
+      "privacy": "We use your email only to deliver your purchase."
+    },
+    "sticky": {
+      "old": "instead of <s>{old}<\/s>",
+      "buy": "Unlock now"
+    },
+    "err": {
+      "not_configured": "Payments are not connected yet. Please try again later.",
+      "generic": "Something went wrong. Please try again.",
+      "network": "No connection. Check your network and try again."
+    },
+    "footer": "72H Reset Protocol is a personal organisation method and does not replace the advice of a doctor or psychologist. If you have been feeling overwhelmed for a long time, talk to a professional."
+  },
+  "it": {
+    "_name": "Italiano",
+    "_locale": "it-IT",
+    "meta": {
+      "title": "Protocollo Reset 72H – Il sistema anti-paralisi per menti sovraccariche",
+      "desc": "Svuota la testa, spezza la dipendenza dallo schermo e delega l'organizzazione della settimana all'intelligenza artificiale in un solo weekend."
+    },
+    "lang": {
+      "label": "Lingua"
+    },
+    "product": {
+      "name": "Protocollo Reset 72H"
+    },
+    "hud": {
+      "label": "Tempo sullo schermo oggi",
+      "tabs": "Schede mentali aperte",
+      "unit": "schede",
+      "mono": "(Il Monolito)",
+      "battery": "Batteria prefrontale",
+      "badge": "Obiettivo: +2 ore di vita recuperate ogni giorno"
+    },
+    "hero": {
+      "badge": "SISTEMA DI NEURO-PRODUTTIVITÀ + AI PRATICA",
+      "h1a": "Hai 40 schede aperte nel cervello e non riesci a concludere nulla?",
+      "h1b": "Resetta la tua mente in 72 ore.",
+      "sub": "Svuota la testa, spezza la dipendenza dallo schermo e delega l'organizzazione della tua settimana all'intelligenza artificiale in un solo weekend.",
+      "cta": "Scarica il Protocollo Reset 72H",
+      "cta_small": "{price} invece di <s>{old}<\/s>",
+      "note": "Prodotto digitale: manuale operativo e workbook, da usare già questo weekend."
+    },
+    "chips": [
+      "la mail a cui non rispondi",
+      "la scadenza di venerdì",
+      "il progetto fermo",
+      "la bolletta",
+      "il preventivo",
+      "quel messaggio",
+      "la palestra",
+      "il CV da aggiornare",
+      "la telefonata",
+      "la presentazione",
+      "il dentista",
+      "la fattura",
+      "il corso iniziato",
+      "l'esame",
+      "quella risposta"
+    ],
+    "chips_more": "+24 altre",
+    "diag": {
+      "h2": "Non sei pigro. Sei vittima di un sequestro neurobiologico.",
+      "sub": "Non è un problema di carattere. Sono quattro processi che girano in background e ti scaricano prima ancora di iniziare.",
+      "card": "Utilizzo batteria prefrontale",
+      "period": "ultime 24 ore",
+      "p": [
+        {
+          "t": "Effetto Zeigarnik",
+          "s": "In background",
+          "x": "Ogni compito iniziato e non concluso occupa un canale attivo nella tua corteccia prefrontale, come un'app pesante lasciata in background che prosciuga la batteria mentale."
+        },
+        {
+          "t": "Risposta di fuga dell'amigdala",
+          "s": "Fuga attiva",
+          "x": "Superata la soglia di saturazione, il cervello interpreta la tua lista di cose da fare come una minaccia e ti spinge verso la dopamina a costo zero dello smartphone."
+        },
+        {
+          "t": "Sabotaggio delle onde cerebrali",
+          "s": "Beta dalle 7:02",
+          "x": "Guardare le notifiche appena sveglio strappa il cervello dalle onde alfa e theta, calme e creative, e lo porta nello stato beta, ansioso e reattivo, da cui parte tutta la giornata."
+        },
+        {
+          "t": "L'inganno delle pause social",
+          "s": "Mai in pausa",
+          "x": "Scorrere il feed per 5 minuti non riposa la mente: la costringe a elaborare centinaia di stimoli visivi e micro-reazioni emotive al minuto."
+        }
+      ]
+    },
+    "mods": {
+      "h2": "Funziona per sottrazione.",
+      "sub": "Un sistema pratico diviso in passi rapidi, pronti da applicare oggi stesso."
+    },
+    "m1": {
+      "title": "Il Triage Mentale dei 15 minuti",
+      "sub": "Ferma l'emorragia di energie mentali in tre fasi da 5 minuti.",
+      "ph": [
+        "<b>Scarico grezzo.<\/b> Tutto quello che hai in testa finisce su un foglio.",
+        "<b>Filtro dei 30 giorni.<\/b> Elimini quello che tra un mese non conterà.",
+        "<b>Il Monolito.<\/b> Isoli l'unica attività che, una volta chiusa, ti toglie il peso più grande entro domani a pranzo."
+      ],
+      "extra": "In più: la Matrice di Classificazione operativa."
+    },
+    "m2": {
+      "title": "Il Protocollo Operativo delle 72 ore",
+      "sub": "Tre giorni, un obiettivo per giorno.",
+      "d": [
+        {
+          "h": "Venerdì sera <span>· attrito digitale<\/span>",
+          "li": [
+            "Schermo in scala di grigi",
+            "Log-out dalle 3 app vampiro",
+            "Caricabatterie a 4 metri dal letto"
+          ]
+        },
+        {
+          "h": "Sabato <span>· monotasking<\/span>",
+          "li": [
+            "Prima ora cieca, senza telefono",
+            "Un ciclo ultradiano di 90 minuti sul Monolito",
+            "La cartella Archivio_Reset"
+          ]
+        },
+        {
+          "h": "Domenica <span>· dopamina pulita<\/span>",
+          "li": [
+            "24 ore senza video verticali",
+            "Pianificazione in 10 minuti alle 18:00",
+            "Schermi spenti alle 21:30"
+          ]
+        }
+      ]
+    },
+    "sim": {
+      "notif_t": "Hai 12 nuove notifiche",
+      "notif_s": "Guarda cosa ti sei perso",
+      "label": "Testa l'attrito digitale",
+      "hint_off": "Tocca l'interruttore: scala di grigi",
+      "hint_on": "Scala di grigi attiva",
+      "pop": "<b>Meno colore, meno richiamo.<\/b> Icone sgargianti e badge rossi sono pensati per farti toccare. In bianco e nero il telefono attira meno: negli studi, da 20 a 50 minuti di schermo in meno al giorno. <a href=\"https://journals.sagepub.com/doi/10.1177/20501579231212062\" target=\"_blank\" rel=\"noopener\">Fonte<\/a>"
+    },
+    "m3": {
+      "title": "La Cassaforte dei 5 Prompt AI Anti-Paralisi",
+      "sub": "Prompt copia-incolla per ChatGPT, Claude e Gemini.",
+      "li": [
+        "<b>Il De-Costruttore<\/b> di progetti giganti",
+        "<b>L'Architetto<\/b> della giornata in 60 secondi",
+        "<b>Lo Sblocca-comunicazioni<\/b> difficili, con 3 bozze pronte",
+        "<b>Il Filtro decisionale<\/b> anti-overthinking (Pareto 80/20)",
+        "<b>Il Reset serale<\/b> in 3 domande"
+      ]
+    },
+    "term": {
+      "title": "De-Costruttore AI",
+      "tag": "versione lite gratuita",
+      "copy": "Copia prompt",
+      "copied": "Copiato",
+      "tasks_aria": "Scegli il compito che ti blocca",
+      "run": "Prova il prompt gratuito",
+      "running": "Sto lavorando…",
+      "rerun": "Riprova",
+      "shuffle": "Un altro prompt",
+      "l_prompt": "> prompt · versione lite gratuita",
+      "l_answer": "> risposta",
+      "l_generic": "(generica: niente tempi, nessuna prima mossa)",
+      "l_full": "> De-Costruttore completo · dentro il Protocollo",
+      "l_task": "Compito bloccante: {name}",
+      "l_steps": "Micro-passi, massimo 10 minuti l'uno:",
+      "l_first": "Primo passo fisico, entro 120 secondi:",
+      "full_title": "Il prompt completo va oltre",
+      "full_text": "Il De-Costruttore ingegnerizzato dà passi da massimo 10 minuti, un tempo per ciascuno e un primo passo fisico da fare entro 120 secondi. È nel Protocollo insieme agli altri 4 prompt.",
+      "reveal": "Guarda cosa restituisce il prompt completo",
+      "get": "Ottieni i 5 prompt completi",
+      "timer_label": "Primo passo fisico",
+      "timer_start": "Avvia i 120 secondi",
+      "timer_stop": "Ferma",
+      "timer_done": "Fatto. Il resto ora pesa meno",
+      "copy_ok": "Prompt gratuito copiato: incollalo nella tua AI",
+      "copy_fail": "Copia non riuscita: tieni premuto il testo per copiarlo",
+      "lite": [
+        "Dividi \"{task}\" in passi più piccoli così riesco a iniziare.",
+        "Sono bloccato su \"{task}\". Fammi una lista di cose da fare semplice.",
+        "Aiutami a pianificare \"{task}\". Elenca i passi principali.",
+        "Qual è la prima cosa da fare per \"{task}\"? Rispondi in breve."
+      ],
+      "tasks": [
+        {
+          "chip": "La tesi",
+          "name": "la tesi di laurea",
+          "lite": [
+            "Definisci la struttura della tesi",
+            "Fai le ricerche per ogni capitolo",
+            "Scrivi una prima bozza",
+            "Rivedi e concludi"
+          ],
+          "steps": [
+            [
+              "Apri un documento nuovo e scrivi solo i titoli dei capitoli",
+              "5 min"
+            ],
+            [
+              "Sotto il primo capitolo butta giù 5 frasi, anche brutte",
+              "10 min"
+            ],
+            [
+              "Cerca 3 fonti per il primo capitolo e incolla i link",
+              "10 min"
+            ],
+            [
+              "Scrivi al relatore una mail di 3 righe con il piano",
+              "5 min"
+            ]
+          ],
+          "first": "Apri il portatile, crea il file \"tesi_v0\" e scrivi il titolo."
+        },
+        {
+          "chip": "Il report di lavoro",
+          "name": "il report di lavoro in ritardo",
+          "lite": [
+            "Raccogli i dati che ti servono",
+            "Imposta le sezioni",
+            "Scrivi il report",
+            "Rileggi e invia"
+          ],
+          "steps": [
+            [
+              "Elenca in 5 righe cosa deve contenere il report",
+              "5 min"
+            ],
+            [
+              "Raccogli i dati dell'ultimo mese in un unico file",
+              "10 min"
+            ],
+            [
+              "Scrivi le 3 conclusioni principali, senza grafici",
+              "10 min"
+            ],
+            [
+              "Butta giù la prima pagina, anche incompleta",
+              "10 min"
+            ]
+          ],
+          "first": "Apri la cartella del progetto e rinomina il file \"report_bozza\"."
+        },
+        {
+          "chip": "Casa da sistemare",
+          "name": "la casa da sistemare",
+          "lite": [
+            "Fai ordine stanza per stanza",
+            "Pulisci le superfici",
+            "Sistema quello che resta",
+            "Butta la spazzatura"
+          ],
+          "steps": [
+            [
+              "Riempi un sacco con cose da buttare, solo dal soggiorno",
+              "10 min"
+            ],
+            [
+              "Svuota il lavandino e fai partire la lavastoviglie",
+              "10 min"
+            ],
+            [
+              "Libera il tavolo: tutto quello che c'è sopra va in una scatola",
+              "5 min"
+            ],
+            [
+              "Passa l'aspirapolvere in una sola stanza",
+              "10 min"
+            ]
+          ],
+          "first": "Alzati e porta in cucina il primo bicchiere che vedi."
+        }
+      ]
+    },
+    "m4": {
+      "title": "Il Menu della Dopamina Sostitutiva",
+      "sub": "Al posto dello scroll compulsivo, quattro portate pre-approvate.",
+      "head": "Menu del giorno",
+      "r": [
+        {
+          "n": "Antipasti",
+          "t": "2–5 min",
+          "x": "Piccole pause a zero schermi."
+        },
+        {
+          "n": "Piatti principali",
+          "t": "30–60 min",
+          "x": "Attività di ricarica profonda."
+        },
+        {
+          "n": "Contorni",
+          "t": "in sottofondo",
+          "x": "Rumore marrone e colonne sonore per i compiti noiosi."
+        },
+        {
+          "n": "Dessert",
+          "t": "la sera",
+          "x": "Lo svago che ti piace, dentro confini precisi."
+        }
+      ]
+    },
+    "m5": {
+      "title": "Protocollo SOS Ricaduta in 5 minuti <span class=\"tag\">Bonus<\/span>",
+      "sub": "La procedura d'emergenza per quando perdi il controllo a metà settimana.",
+      "r": [
+        {
+          "t": "60 sec",
+          "x": "<b>Interruzione cinetica.<\/b> Acqua fredda su viso o polsi."
+        },
+        {
+          "t": "120 sec",
+          "x": "<b>Reset del foglio bianco<\/b> su un post-it."
+        },
+        {
+          "t": "15 min",
+          "x": "<b>Barriera del timer visivo,<\/b> per invertire l'inerzia nei primi 4 minuti."
+        }
+      ]
+    },
+    "offer": {
+      "h2": "Costa come due aperitivi.",
+      "sub": "{price} invece di {old}. In cambio ti porti a casa un metodo per riprenderti la concentrazione, e il tempo che oggi finisce nel feed."
+    },
+    "co": {
+      "your_order": "Il tuo ordine",
+      "incl": [
+        "Manuale operativo con i 5 moduli",
+        "Workbook interattivo: tabelle di Triage e Checklist 72H",
+        "I 5 prompt AI completi, pronti da copiare con un tap",
+        "Il Menu della Dopamina da compilare",
+        "La griglia settimanale, da lunedì a venerdì"
+      ],
+      "bump_title": "Aggiungi le 5 tracce audio",
+      "bump_text": "Rumore marrone e frequenze binaurali, da mettere in cuffia durante i 90 minuti di monotasking del sabato.",
+      "email_label": "La tua email",
+      "email_ph": "tu@esempio.it",
+      "email_help": "Il link per scaricare arriva qui subito dopo il pagamento.",
+      "email_err": "Inserisci un indirizzo email valido.",
+      "total": "Totale",
+      "buy": "Sblocca ora a {total}",
+      "buy_bundle": "Sblocca il pacchetto completo a {total}",
+      "buy_loading": "Apro il pagamento sicuro…",
+      "pay_note": "Pagamento sicuro con PayPal. Prodotto digitale, nessuna spedizione.",
+      "privacy": "Usiamo la tua email solo per consegnarti l’acquisto."
+    },
+    "sticky": {
+      "old": "invece di <s>{old}<\/s>",
+      "buy": "Sblocca ora"
+    },
+    "err": {
+      "not_configured": "I pagamenti non sono ancora collegati. Riprova più tardi.",
+      "generic": "Qualcosa è andato storto. Riprova.",
+      "network": "Nessuna connessione. Controlla la rete e riprova."
+    },
+    "footer": "Protocollo Reset 72H è un metodo di organizzazione personale e non sostituisce il parere di un medico o di uno psicologo. Se ti senti sopraffatto da tempo, parlane con un professionista."
+  }
+};
+
+/* Prices shown on the page (in cents). The amount actually charged is
+   decided by the server (lib/config.js): keep the two in step. */
+const PRICE = { base: 1490, bump: 490, old: 3900, currency: 'EUR' };
+
+/* true: visitors see their browser language when it is available, otherwise the first language (English). */
+const AUTO_DETECT_LANGUAGE = true;
+
+(() => {
+  'use strict';
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+  const lerp = (a, b, t) => a + (b - a) * t;
+  const wait = (ms) => new Promise((r) => setTimeout(r, ms));
+  const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+  /* =========================================================
+     0) Languages
+     ========================================================= */
+  const LANGS = Object.keys(I18N);
+  const bump = $('#bump');
+  const total = () => PRICE.base + (bump.checked ? PRICE.bump : 0);
+  const get = (o, path) => path.split('.').reduce((a, k) => (a == null ? a : a[k]), o);
+
+  function pickLang() {
+    const q = (new URLSearchParams(location.search).get('lang') || '').toLowerCase();
+    if (I18N[q]) return q;
+    try { const s = localStorage.getItem('r72_lang'); if (I18N[s]) return s; } catch {}
+    if (AUTO_DETECT_LANGUAGE) {
+      for (const l of navigator.languages || [navigator.language || '']) {
+        const c = String(l).slice(0, 2).toLowerCase();
+        if (I18N[c]) return c;
+      }
+    }
+    return LANGS[0];
+  }
+  let lang = pickLang();
+
+  function money(cents) {
+    try { return new Intl.NumberFormat(I18N[lang]._locale || lang, { style: 'currency', currency: PRICE.currency }).format(cents / 100); }
+    catch { return '€' + (cents / 100).toFixed(2); }
+  }
+  function t(key, vars) {
+    let s = get(I18N[lang], key);
+    if (s == null) s = get(I18N[LANGS[0]], key);
+    if (s == null) return key;
+    if (typeof s !== 'string') return s;
+    const v = { price: money(PRICE.base), old: money(PRICE.old), bump: money(PRICE.bump), total: money(total()), ...vars };
+    return s.replace(/\{(\w+)\}/g, (m, k) => (k in v ? v[k] : m));
+  }
+
+  /* ---------- Toast ---------- */
+  const toastEl = $('#toast');
+  let toastT;
+  function toast(msg) {
+    toastEl.textContent = msg;
+    toastEl.classList.add('is-on');
+    clearTimeout(toastT);
+    toastT = setTimeout(() => toastEl.classList.remove('is-on'), 3200);
+  }
+
+  /* =========================================================
+     1) HUD: tempo sullo schermo che scende con lo scroll
+     ========================================================= */
+  const hud = $('#hud');
+  const glow = $('#glow');
+  const elTime = $('#hud-time'), elTabs = $('#hud-tabs'), elBat = $('#hud-bat'), elBatt = $('#hud-batt');
+  const bars = $$('#hud-bar i');
+  const SHARE = [0.38, 0.27, 0.21, 0.14];          // social, video brevi, notifiche, altro
+  const START_MIN = 462;                            // 7h 42m
+  const END_MIN = 75;                               // 1h 15m
+  $('#hud-delta').textContent = '−' + Math.round((1 - END_MIN / START_MIN) * 100) + '%';
+
+  // percentuale di scroll -> valori (come da brief)
+  const K_MIN  = [[0, 462], [20, 462], [37, 315], [53, 185], [70, 75], [100, 75]];
+  const K_TABS = [[0, 40], [20, 40], [70, 1], [100, 1]];
+  const K_BAT  = [[0, 12], [20, 12], [80, 100], [100, 100]];
+  // colore: rosso -> ambra -> ciano -> smeraldo
+  const K_COL  = [[0, [255, 69, 58]], [30, [255, 120, 46]], [45, [255, 159, 10]], [62, [34, 211, 238]], [80, [52, 211, 153]], [100, [52, 211, 153]]];
+
+  const smooth = (t) => t * t * (3 - 2 * t);
+  function at(keys, p) {
+    if (p <= keys[0][0]) return keys[0][1];
+    for (let i = 1; i < keys.length; i++) {
+      const [p1, v1] = keys[i], [p0, v0] = keys[i - 1];
+      if (p <= p1) {
+        const t = smooth((p - p0) / (p1 - p0 || 1));
+        return Array.isArray(v0) ? v0.map((c, j) => lerp(c, v1[j], t)) : lerp(v0, v1, t);
+      }
+    }
+    return keys[keys.length - 1][1];
+  }
+
+  // Le soglie del brief sono agganciate alle sezioni, così cadono giuste su ogni telefono:
+  // inizio diagnosi = 20%, fine moduli = 70%, inizio offerta = 80%, fondo pagina = 100%.
+  let anchors = [];
+  function measure() {
+    const vh = innerHeight;
+    const max = Math.max(1, document.documentElement.scrollHeight - vh);
+    const top = (el) => el.getBoundingClientRect().top + scrollY;
+    const diag = top($('#diagnosis')) - vh * 0.55;
+    const modEnd = top($('#modules')) + $('#modules').offsetHeight - vh * 0.75;
+    const offer = top($('#offer')) - vh * 0.45;
+    const pts = [[0, 0], [diag, 20], [modEnd, 70], [offer, 80], [max, 100]];
+    anchors = [];
+    let last = -1;
+    for (const [y, p] of pts) {
+      const yy = clamp(y, last + 1, max);
+      anchors.push([yy, p]);
+      last = yy;
+    }
+  }
+  function progress() {
+    const y = scrollY;
+    for (let i = 1; i < anchors.length; i++) {
+      const [y0, p0] = anchors[i - 1], [y1, p1] = anchors[i];
+      if (y <= y1) return lerp(p0, p1, clamp((y - y0) / (y1 - y0 || 1), 0, 1));
+    }
+    return 100;
+  }
+
+  const cur = { min: 462, tabs: 40, bat: 12, col: [255, 69, 58] };
+  let tgt = { ...cur };
+  let raf = 0, lastT = 0;
+
+  function fmtTime(m) { m = Math.round(m); return Math.floor(m / 60) + 'h ' + String(m % 60).padStart(2, '0') + 'm'; }
+
+  function paint() {
+    elTime.textContent = fmtTime(cur.min);
+    elTabs.textContent = Math.round(cur.tabs);
+    elBat.textContent = Math.round(cur.bat) + '%';
+    elBatt.style.setProperty('--b', (cur.bat / 100).toFixed(3));
+    const rgb = cur.col.map(Math.round).join(' ');
+    hud.style.setProperty('--acc', rgb);
+    glow.style.setProperty('--acc', rgb);
+    const w = Math.max(0.06, cur.min / START_MIN);
+    bars.forEach((b, i) => { b.style.width = (w * SHARE[i] * 100).toFixed(2) + '%'; });
+  }
+
+  function tick(now) {
+    const dt = Math.min(64, now - (lastT || now));
+    lastT = now;
+    const k = reduceMotion ? 1 : 1 - Math.exp(-dt / 90);
+    let moving = false;
+    for (const key of ['min', 'tabs', 'bat']) {
+      cur[key] += (tgt[key] - cur[key]) * k;
+      if (Math.abs(tgt[key] - cur[key]) > 0.05) moving = true; else cur[key] = tgt[key];
+    }
+    cur.col = cur.col.map((c, i) => c + (tgt.col[i] - c) * k);
+    paint();
+    raf = moving ? requestAnimationFrame(tick) : 0;
+    if (!moving) lastT = 0;
+  }
+
+  function onScroll() {
+    const p = progress();
+    tgt = { min: at(K_MIN, p), tabs: at(K_TABS, p), bat: at(K_BAT, p), col: at(K_COL, p) };
+    hud.classList.toggle('is-compact', scrollY > 80);
+    hud.classList.toggle('is-final', p >= 80);
+    if (!raf) raf = requestAnimationFrame(tick);
+  }
+
+  measure(); onScroll();
+  addEventListener('scroll', onScroll, { passive: true });
+  addEventListener('resize', () => { measure(); onScroll(); });
+  addEventListener('load', () => { measure(); onScroll(); });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { measure(); onScroll(); });
+
+  /* =========================================================
+     2) Grayscale simulator
+     ========================================================= */
+  const simToggle = $('#sim-toggle'), simScreen = $('#sim-screen'), simPop = $('#sim-pop'), simHint = $('#sim-hint');
+  let popT, simOn = false;
+  simToggle.addEventListener('click', () => {
+    simOn = !simOn;
+    simToggle.setAttribute('aria-checked', String(simOn));
+    simScreen.classList.toggle('is-gray', simOn);
+    simHint.textContent = t(simOn ? 'sim.hint_on' : 'sim.hint_off');
+    clearTimeout(popT);
+    if (simOn) popT = setTimeout(() => { simPop.hidden = false; }, reduceMotion ? 0 : 450);
+    else simPop.hidden = true;
+  });
+
+  /* =========================================================
+     3) AI demo: the free "lite" prompt, then a preview of what
+        the full prompt (sold in the Protocol) returns
+     ========================================================= */
+  const out = $('#term-out'), runBtn = $('#term-run'), shuffleBtn = $('#term-shuffle'), copyBtn = $('#term-copy');
+  const fullBox = $('#term-full'), revealBtn = $('#term-reveal'), getBtn = $('#term-get'), timerBox = $('#term-timer');
+  let taskIdx = 0, variant = Math.floor(Math.random() * 97), runId = 0, busy = false, liteHtml = '';
+
+  const tasks = () => t('term.tasks');
+  const litePrompt = () => { const L = t('term.lite'); return L[variant % L.length].replace('{task}', tasks()[taskIdx].name); };
+  const span = (cls, text) => (cls ? `<span class="${cls}">${esc(text)}</span>` : esc(text));
+  const head = () => span('p', t('term.l_prompt')) + '\n' + span('d', litePrompt()) + '\n\n';
+
+  function resetTerm() {
+    runId++; busy = false; liteHtml = '';
+    out.innerHTML = head() + '<span class="caret"></span>';
+    runBtn.disabled = false; shuffleBtn.disabled = false; revealBtn.disabled = false;
+    runBtn.textContent = t('term.run');
+    fullBox.hidden = true; revealBtn.hidden = false; getBtn.hidden = true; timerBox.hidden = true;
+    resetTimer();
+  }
+
+  async function type(prefix, lines, id) {
+    let html = '';
+    for (const [cls, text] of lines) {
+      if (id !== runId) return null;
+      if (reduceMotion) { html += span(cls, text) + '\n'; continue; }
+      for (let i = 1; i <= text.length; i += 2) {
+        if (id !== runId) return null;
+        out.innerHTML = prefix + html + span(cls, text.slice(0, i)) + '<span class="caret"></span>';
+        await wait(14);
+      }
+      html += span(cls, text) + '\n';
+      out.innerHTML = prefix + html + '<span class="caret"></span>';
+      await wait(text ? 120 : 60);
+    }
+    if (id !== runId) return null;
+    out.innerHTML = prefix + html;
+    return html;
+  }
+
+  async function runLite() {
+    if (busy) return;
+    busy = true; const id = ++runId;
+    runBtn.disabled = true; shuffleBtn.disabled = true; runBtn.textContent = t('term.running');
+    fullBox.hidden = true; timerBox.hidden = true; revealBtn.hidden = false; getBtn.hidden = true; resetTimer();
+    const tk = tasks()[taskIdx];
+    const lines = [['p', t('term.l_answer')], ...tk.lite.map((s, i) => ['', `${i + 1}. ${s}`]), ['d', t('term.l_generic')]];
+    const pre = head();
+    const h = await type(pre, lines, id);
+    if (h == null) return;
+    liteHtml = pre + h; busy = false;
+    runBtn.disabled = false; shuffleBtn.disabled = false; runBtn.textContent = t('term.rerun');
+    fullBox.hidden = false;
+  }
+
+  async function runFull() {
+    if (busy || !liteHtml) return;
+    busy = true; const id = ++runId;
+    revealBtn.disabled = true; runBtn.disabled = true; shuffleBtn.disabled = true;
+    const tk = tasks()[taskIdx];
+    const lines = [['p', t('term.l_full')], ['', t('term.l_task', { name: tk.name })], ['', ''], ['d', t('term.l_steps')],
+      ...tk.steps.map(([s, m], i) => ['', `${i + 1}. ${s}  [${m}]`]), ['', ''], ['ok', t('term.l_first')], ['', '→ ' + tk.first]];
+    const h = await type(liteHtml + '\n', lines, id);
+    if (h == null) return;
+    busy = false;
+    revealBtn.disabled = false; runBtn.disabled = false; shuffleBtn.disabled = false;
+    revealBtn.hidden = true; getBtn.hidden = false; timerBox.hidden = false;
+  }
+
+  $$('.term-task').forEach((b) => b.addEventListener('click', () => {
+    taskIdx = Number(b.dataset.task);
+    $$('.term-task').forEach((x) => x.setAttribute('aria-checked', String(x === b)));
+    resetTerm();
+  }));
+  runBtn.addEventListener('click', runLite);
+  revealBtn.addEventListener('click', runFull);
+  shuffleBtn.addEventListener('click', () => { variant += 1 + Math.floor(Math.random() * 2); resetTerm(); });
+
+  async function copy(text) {
+    try { await navigator.clipboard.writeText(text); return true; }
+    catch {
+      const ta = document.createElement('textarea');
+      ta.value = text; ta.setAttribute('readonly', ''); ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta); ta.select(); ta.setSelectionRange(0, text.length);
+      let ok = false; try { ok = document.execCommand('copy'); } catch {}
+      ta.remove(); return ok;
+    }
+  }
+  copyBtn.addEventListener('click', async () => {
+    const ok = await copy(litePrompt());
+    toast(t(ok ? 'term.copy_ok' : 'term.copy_fail'));
+    if (ok) { copyBtn.textContent = t('term.copied'); setTimeout(() => (copyBtn.textContent = t('term.copy')), 1800); }
+  });
+
+  // The 120-second timer
+  const timerVal = $('#timer-val'), timerBtn = $('#timer-btn');
+  let timerId = 0, timerEnd = 0;
+  function resetTimer() { clearInterval(timerId); timerId = 0; timerVal.textContent = '02:00'; timerBtn.textContent = t('term.timer_start'); }
+  timerBtn.addEventListener('click', () => {
+    if (timerId) { resetTimer(); return; }
+    timerEnd = Date.now() + 120000; timerBtn.textContent = t('term.timer_stop');
+    const step = () => {
+      const left = Math.max(0, Math.ceil((timerEnd - Date.now()) / 1000));
+      timerVal.textContent = String(Math.floor(left / 60)).padStart(2, '0') + ':' + String(left % 60).padStart(2, '0');
+      if (left === 0) { clearInterval(timerId); timerId = 0; timerBtn.textContent = t('term.timer_done'); }
+    };
+    step(); timerId = setInterval(step, 250);
+  });
+
+  /* =========================================================
+     4) Checkout: email first, then PayPal's secure page.
+        No key or secret lives in this page: it only calls /api/checkout.
+     ========================================================= */
+  const form = $('#pay-form'), emailEl = $('#email'), emailErr = $('#email-err'), buy = $('#buy'), hp = $('#hp');
+  const totalEl = $('#total'), stickyBuy = $('#sticky-buy');
+  let loading = false, shown = PRICE.base, anim = 0;
+
+  const validEmail = (v) => v.length <= 254 && /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);
+  function paintPrices() {
+    $$('[data-price]').forEach((el) => { el.textContent = money(el.dataset.price === 'total' ? total() : PRICE[el.dataset.price]); });
+  }
+  function renderBuy() {
+    buy.textContent = loading ? t('co.buy_loading') : t(bump.checked ? 'co.buy_bundle' : 'co.buy');
+    buy.disabled = loading; stickyBuy.disabled = loading;
+  }
+  function animateTotal(to) {
+    cancelAnimationFrame(anim);
+    const from = shown, t0 = performance.now(), dur = reduceMotion ? 1 : 380;
+    const step = (now) => {
+      const k = clamp((now - t0) / dur, 0, 1);
+      shown = Math.round(lerp(from, to, 1 - Math.pow(1 - k, 3)));
+      totalEl.textContent = money(shown);
+      if (k < 1) anim = requestAnimationFrame(step);
+    };
+    anim = requestAnimationFrame(step);
+  }
+  bump.addEventListener('change', () => { paintPrices(); totalEl.textContent = money(shown); animateTotal(total()); renderBuy(); });
+
+  function setEmailError(on) {
+    emailErr.hidden = !on;
+    if (on) emailEl.setAttribute('aria-invalid', 'true'); else emailEl.removeAttribute('aria-invalid');
+  }
+  emailEl.addEventListener('input', () => { if (!emailErr.hidden && validEmail(emailEl.value.trim())) setEmailError(false); });
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (loading) return;
+    const email = emailEl.value.trim();
+    if (!validEmail(email)) { setEmailError(true); emailEl.focus(); return; }
+    setEmailError(false);
+    loading = true; renderBuy();
+    try {
+      const r = await fetch('/api/checkout', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, bump: bump.checked, lang, company: hp.value }),
+      });
+      const data = await r.json().catch(() => ({}));
+      if (r.ok && data.checkout_url) {
+        try { localStorage.setItem('r72_order', JSON.stringify({ id: data.order_id, lang, at: Date.now() })); } catch {}
+        location.href = data.checkout_url;
+        return;
+      }
+      if (data.error === 'invalid_email') { setEmailError(true); emailEl.focus(); }
+      else toast(t(data.error === 'not_configured' ? 'err.not_configured' : 'err.generic'));
+    } catch { toast(t('err.network')); }
+    loading = false; renderBuy();
+  });
+
+  // Sticky button: pays straight away when the email is already there, otherwise brings the visitor to the email field.
+  stickyBuy.addEventListener('click', () => {
+    if (validEmail(emailEl.value.trim())) {
+      if (form.requestSubmit) form.requestSubmit(); else form.dispatchEvent(new Event('submit', { cancelable: true }));
+      return;
+    }
+    $('#checkout').scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
+    setTimeout(() => emailEl.focus({ preventScroll: true }), reduceMotion ? 0 : 550);
+  });
+
+  /* ---------- Sticky bar: hidden while a full-size buy button is on screen ---------- */
+  const sticky = $('#sticky');
+  if ('IntersectionObserver' in window) {
+    const onScreen = new Set();
+    const io = new IntersectionObserver((ents) => {
+      ents.forEach((en) => (en.isIntersecting ? onScreen.add(en.target) : onScreen.delete(en.target)));
+      sticky.classList.toggle('is-hidden', onScreen.size > 0);
+    }, { threshold: 0.6 });
+    io.observe(buy); io.observe($('#hero-cta'));
+  }
+
+  /* ---------- In-page links scroll smoothly (the HUD "resets" on the way down) ---------- */
+  $$('[data-scroll]').forEach((a) => a.addEventListener('click', (e) => {
+    const el = document.querySelector(a.getAttribute('href'));
+    if (!el) return;
+    e.preventDefault();
+    el.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+  }));
+
+  /* =========================================================
+     5) Apply the language to the whole page
+     ========================================================= */
+  const langSel = $('#lang');
+  langSel.innerHTML = LANGS.map((c) => `<option value="${c}">${esc(I18N[c]._name || c)}</option>`).join('');
+
+  function applyI18n() {
+    document.documentElement.lang = lang;
+    langSel.value = lang;
+    document.title = t('meta.title');
+    const md = $('meta[name="description"]'); if (md) md.setAttribute('content', t('meta.desc'));
+    $$('[data-i18n]').forEach((el) => { el.innerHTML = t(el.dataset.i18n); });
+    $$('[data-i18n-attr]').forEach((el) => el.dataset.i18nAttr.split(';').forEach((p) => {
+      const [attr, key] = p.split(':'); el.setAttribute(attr, t(key));
+    }));
+    paintPrices(); shown = total();
+    simHint.textContent = t(simOn ? 'sim.hint_on' : 'sim.hint_off');
+    renderBuy();
+    resetTerm();
+    measure(); onScroll();
+  }
+  langSel.addEventListener('change', () => {
+    if (!I18N[langSel.value]) return;
+    lang = langSel.value;
+    try { localStorage.setItem('r72_lang', lang); } catch {}
+    try { const u = new URL(location.href); u.searchParams.set('lang', lang); history.replaceState(null, '', u); } catch {}
+    applyI18n();
+  });
+  applyI18n();
+})();
+</script>
+</body>
+</html>

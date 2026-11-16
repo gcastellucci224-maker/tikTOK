@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#090A0F">
+<meta name="robots" content="noindex">
+<title>Thank you – 72H Reset Protocol</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  [hidden] { display: none !important; }
+  html, body { margin: 0; min-height: 100%; background: #090A0F; color: #EDEBE6; }
+  body {
+    font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; -webkit-font-smoothing: antialiased;
+    display: grid; place-items: center; min-height: 100vh; padding: 24px 20px;
+    background: radial-gradient(110% 55% at 50% -12%, rgb(52 211 153 / .18), transparent 68%), #090A0F;
+  }
+  main { width: 100%; max-width: 440px; }
+  .card {
+    padding: 28px 22px; border-radius: 24px; text-align: center;
+    background: rgb(18 20 29 / .8); border: 1px solid rgb(52 211 153 / .3);
+    box-shadow: 0 0 34px -14px rgb(52 211 153 / .55), inset 0 1px 0 rgb(255 255 255 / .05);
+  }
+  .ico { width: 64px; height: 64px; margin: 0 auto 18px; border-radius: 50%; display: grid; place-items: center; color: #04130D; background: #7DF9C1; }
+  .ico svg { width: 30px; height: 30px; }
+  .ico.wait { background: transparent; border: 3px solid rgb(255 255 255 / .12); border-top-color: #7DF9C1; animation: spin 1s linear infinite; }
+  .ico.bad { background: #FF9F0A; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  h1 { margin: 0; font-size: 1.7rem; line-height: 1.12; font-weight: 800; letter-spacing: -.03em; text-wrap: balance; }
+  p { margin: 12px 0 0; font-size: 16px; line-height: 1.55; color: #C9C7C2; }
+  .small { font-size: 13.5px; color: #9A9DA8; }
+  b { color: #EDEBE6; }
+  a.btn {
+    display: flex; align-items: center; justify-content: center; min-height: 56px; margin-top: 22px; padding: 0 18px; border-radius: 18px;
+    font-weight: 800; font-size: 16.5px; color: #04130D; background: #7DF9C1; text-decoration: none;
+  }
+  a { color: #7DF9C1; }
+  a:focus-visible { outline: 2px solid #7DF9C1; outline-offset: 3px; border-radius: 10px; }
+  @media (prefers-reduced-motion: reduce) { .ico.wait { animation: none; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="card" id="card" aria-live="polite">
+    <div class="ico wait" id="ico"></div>
+    <h1 id="h">Confirming your payment…</h1>
+    <p id="p">This takes a few seconds. Please keep this page open.</p>
+    <p class="small" id="s" hidden></p>
+    <a class="btn" id="back" href="/" hidden>Back to the offer</a>
+  </div>
+</main>
+
+<script>
+(() => {
+  'use strict';
+  const T = {
+    en: {
+      title: 'Thank you – 72H Reset Protocol',
+      wait_h: 'Confirming your payment…', wait_p: 'This takes a few seconds. Please keep this page open.',
+      ok_h: 'Payment received. Check your inbox.', ok_p: 'We sent your download link to <b>{email}</b>.', ok_p_noemail: 'Your download link is on its way to your inbox.',
+      ok_s: "Can't see it within a few minutes? Check your spam folder{support}.",
+      support: ', or write to <a href="mailto:{mail}">{mail}</a>',
+      slow_h: 'Still waiting for the confirmation', slow_p: 'As soon as your payment is confirmed, the email with your download link goes out automatically. You can close this page.',
+      bad_h: 'The payment was not completed', bad_p: 'You can go back and try again whenever you want.', back: 'Back to the offer',
+      none_h: 'Thank you', none_p: 'If you completed the payment, your download link is on its way to your inbox.',
+    },
+    it: {
+      title: 'Grazie – Protocollo Reset 72H',
+      wait_h: 'Sto confermando il pagamento…', wait_p: 'Bastano pochi secondi. Tieni aperta questa pagina.',
+      ok_h: 'Pagamento ricevuto. Controlla la posta.', ok_p: 'Abbiamo inviato il link per scaricare a <b>{email}</b>.', ok_p_noemail: 'Il link per scaricare sta arrivando nella tua casella.',
+      ok_s: 'Non la vedi entro qualche minuto? Controlla nello spam{support}.',
+      support: ', oppure scrivi a <a href="mailto:{mail}">{mail}</a>',
+      slow_h: 'Sto ancora aspettando la conferma', slow_p: "Appena il pagamento viene confermato, l'email con il link parte da sola. Puoi chiudere questa pagina.",
+      bad_h: 'Il pagamento non è stato completato', bad_p: 'Puoi tornare indietro e riprovare quando vuoi.', back: "Torna all'offerta",
+      none_h: 'Grazie', none_p: 'Se hai completato il pagamento, il link per scaricare sta arrivando nella tua casella.',
+    },
+  };
+  const $ = (id) => document.getElementById(id);
+  const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  let saved = {};
+  try { saved = JSON.parse(localStorage.getItem('r72_order') || '{}') || {}; } catch {}
+  const q = new URLSearchParams(location.search);
+  let lang = (q.get('lang') || saved.lang || '').toLowerCase();
+  if (!T[lang]) { try { lang = localStorage.getItem('r72_lang') || ''; } catch {} }
+  if (!T[lang]) lang = 'en';
+  const L = T[lang];
+  document.documentElement.lang = lang; document.title = L.title;
+  $('back').textContent = L.back; $('back').href = '/?lang=' + lang + '#offer';
+
+  function show(kind, h, p, s) {
+    $('ico').className = 'ico' + (kind === 'wait' ? ' wait' : kind === 'bad' ? ' bad' : '');
+    $('ico').innerHTML = kind === 'ok' ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>'
+      : kind === 'bad' ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 7v6"/><path d="M12 17h.01"/></svg>' : '';
+    $('h').textContent = h; $('p').innerHTML = p;
+    $('s').hidden = !s; if (s) $('s').innerHTML = s;
+    $('back').hidden = kind !== 'bad';
+  }
+  function ok(d) {
+    const sup = d && d.support ? L.support.replace(/\{mail\}/g, esc(d.support)) : '';
+    show('ok', L.ok_h, d && d.email ? L.ok_p.replace('{email}', esc(d.email)) : L.ok_p_noemail, L.ok_s.replace('{support}', sup));
+    try { localStorage.removeItem('r72_order'); } catch {}
+  }
+
+  // PayPal sends the buyer back with ?token=<order id>. It is used when the saved order is missing,
+  // which happens when the payment was finished in a different browser from the one it started in.
+  const ok_id = (v) => (typeof v === 'string' && /^[A-Za-z0-9-]{8,64}$/.test(v) ? v : '');
+  const id = ok_id(q.get('token')) || ok_id(saved.id);
+  if (q.get('cancel')) { show('bad', L.bad_h, L.bad_p, ''); return; }
+  if (!id) { show('ok', L.none_h, L.none_p, ''); return; }
+  show('wait', L.wait_h, L.wait_p, '');
+
+  let tries = 0;
+  async function poll() {
+    tries++;
+    let d = null;
+    try { const r = await fetch('/api/status?id=' + encodeURIComponent(id), { cache: 'no-store' }); d = await r.json(); } catch {}
+    const st = d && d.status;
+    if (st === 'delivered') return ok(d);
+    if (st === 'failed' || st === 'cancelled') return show('bad', L.bad_h, L.bad_p, '');
+    if (tries >= 20) {
+      if (st === 'processing') return ok(d);
+      return show('ok', L.slow_h, L.slow_p, '');
+    }
+    setTimeout(poll, tries < 6 ? 2000 : 3500);
+  }
+  poll();
+})();
+</script>
+</body>
+</html>
