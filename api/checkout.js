@@ -29,7 +29,7 @@ export default {
     const miss = missing();
     if (miss.length) {
       console.error('[checkout] not configured, missing: ' + miss.join(', '));
-      return json(503, { error: 'not_configured' });
+      return json(503, { error: 'not_configured', missing: miss });
     }
 
     const amount = c.priceCents + (bump ? c.bumpCents : 0);
@@ -62,7 +62,7 @@ export default {
       return json(200, { checkout_url: order.checkout_url, order_id: order.id });
     } catch (e) {
       console.error('[checkout] ' + e.message);
-      return json(502, { error: 'generic' });
+      return json(502, { error: 'generic', detail: String(e.message).slice(0, 300) });
     }
   },
 };
