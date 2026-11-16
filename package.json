@@ -1,0 +1,10 @@
+{
+  "name": "reset72h-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "72H Reset Protocol: landing page + PayPal checkout + email delivery (Vercel)",
+  "scripts": {
+    "test": "node scripts/selftest.mjs"
+  }
+}
