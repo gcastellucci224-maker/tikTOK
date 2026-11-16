@@ -47,11 +47,17 @@ export default {
       });
       if (!order || !order.id || !order.checkout_url) throw new Error('PayPal answered without id/checkout_url');
 
-      // Save the order before the customer pays: this is what the delivery relies on.
-      await writeOrder(order.id, {
-        id: order.id, email, lang, bump, amount, currency: c.currency,
-        status: 'pending', created_at: new Date().toISOString(),
-      }, undefined, `order ${order.id}: created`);
+      // Save the order in GitHub DB if configured (do not block PayPal redirect if DB write fails).
+      if (c.github.token && c.github.repo) {
+        try {
+          await writeOrder(order.id, {
+            id: order.id, email, lang, bump, amount, currency: c.currency,
+            status: 'pending', created_at: new Date().toISOString(),
+          }, undefined, `order ${order.id}: created`);
+        } catch (dbErr) {
+          console.error('[checkout] github-db write warning: ' + dbErr.message);
+        }
+      }
 
       return json(200, { checkout_url: order.checkout_url, order_id: order.id });
     } catch (e) {
